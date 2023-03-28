@@ -51,11 +51,11 @@ const browser_check = {
   inclusion_function: (data) => {
     return data.mobile === false
   },
-  // if it is TRUE...end experiment (how to make this do other stuff? )
+  // i changed the plugin itself--dangerous!
+  // i don't think this will even fire now but this is a required argument for this trial type. 
   exclusion_message: (data) => {
     if(data.mobile){
-      window.location = 'https://figuratively-speaking.com/BDR/mobilewarning.html';
-    // return '<p>You must use a desktop/laptop computer to participate in this experiment.</p>';
+      return '<p>You must use a desktop/laptop computer to participate in this experiment.</p>';
     }
   }
 };
@@ -121,7 +121,7 @@ const age = {
       
 const sex = {
     type: jsPsychSurveyMultiChoice,
-    questions: [{prompt: "Please select your sex<br>",
+    questions: [{prompt: "Please select your gender<br>",
     options: ["Female", "Male", "I prefer not to answer"], required: true}],
     on_finish: function(data){
         jsPsych.data.addProperties({sex: data.response})
@@ -235,60 +235,6 @@ const self_ratings_english = {
 };
 
 /* 
-#############
-C-TEST C-TEST
-#############
-*/
-
-
-
-const instructions_ctest = {
-  type: jsPsychHtmlButtonResponse,
-  stimulus: '<b>Text Completion Activity</b><br><p class = "instructions">In this next part, you will complete a short text completion activity. <br><br>You will see four short passages, one-at-a-time. Some of the words in each passage are not complete. An empty box shows the words that are not complete. Please note that the length of the box does not indicate the number of letters needed to complete a word. Sometimes you will need only one or two letters to complete a word but at other times you will need several letters. Please try to complete all the words in all four passages by typing the missing letters into the boxes. <br><br>If you are unable to complete a word, just go onto the next word. However, once you move on to a new text, you cannot return to the previous text. <br><br>Press "Continue" when you are ready to begin.',
-    choices: ['Continue']
-}
-
-var CT_stim = [
-    {
-    c_text: 'One cool autumn evening, Bob L., a young professional, returned home from a trip to the supermarket to find his computer gone. Gone! <br><br>All so%% of cra%% thoughts ra%% through his mind: H%% it be%% stolen? H%% it be%% kidnapped? H%% searched h%% house f%% <br>a cl%% until he noticed a sm%% piece of printout pa%% stuck un%% <br>a mag%% on his refrigerator do%%.<br><br> His heart sank as he read this simple message: CAN\'T CONTINUE, FILE CLOSED, BYE.', c_text_id: 'CTEST1', data: {stim_id: 'CTEST_1'}
-},
-{
-    c_text: 'There is a third factor besides farming and herding in the spread of man-made deserts: deforestation.<br><br>The progre%% destruction o%% the Th%% World\'s st%% of tr%%<br>is damaging not on%% in d%% regions: every%% it occurs it c%% accelerate t%% decay o%% the so%% and re%% its capa%% to fe%% people.<br><br>It can reduce rainfall and lead to drought. ', c_text_id: 'CTEST2', data: {stim_id: 'CTEST_2'}
-},
-{
-    c_text: 'There are certain things which no student can do without and others which may not be as necessary as you thought.<br><br> It m%% be wo%% considering so%% small hi%%. You m%% <br>find your%% in ne%% of elect%% appliances su%% as li%% bulbs,<br> adap%% or plugs. These c%% be obta%% from ma%% places. GILL i%% a go%% hardware sh%% and try%% to fi%% it is a chal%%.<br><br> It is hidden in a little alley leading off High Street called Wheatsheaf Yard.', c_text_id: 'CTEST3', data: {stim_id: 'CTEST_3'}
-},
-{
-    c_text: 'The private conscience of the leader - rather than his public responsibilities - becomes the focal point of politics.<br><br> Internal crit%% - possession o%%, devotion t%%, and stan%% up f%% private prin%% - become t%% standards o%% political judg%%. Constituents disa%%, and w%% are left with a poli%% leader deter%% policy o%% the ba%% of compa%% with h%% private princ%%.<br><br> From this perspective we can better understand why Goldwater voted against the Civil Rights Act of 1964.', c_text_id: 'CTEST4', data: {stim_id: 'CTEST_4'}
-}
-]
-
-
-
-var CT_trials = {
-timeline:[
-{
-type: jsPsychHtmlButtonResponse,
-stimulus: 'Press "Continue" to see the next text.<br><br>',
-choices: ['Continue'],
-},
-{
-type: jsPsychCloze,
-text: jsPsych.timelineVariable('c_text'),
-data: jsPsych.timelineVariable("data"),
-button_text: '<br>Submit Answers</b>',
-trial_duration: 3600000
-// on_finish: function(){ // save the c-test trial as a csv just in case. 
-//   saveTrialData(jsPsych.data.get().select('subject').values[0].concat('_').concat(Date.now().toString()).concat('_').concat(jsPsych.timelineVariable('c_text_id')), jsPsych.data.getLastTimelineData().csv(),
-//   jsPsych.data.get().select('subject').values[0]);
- // console.log(jsPsych.data.getLastTimelineData())
-//}
-}
-], timeline_variables: CT_stim, randomize_order: false
-};
-
-
-/* 
 
 #########
 LexTale  LexTale
@@ -366,9 +312,19 @@ const lextale_preamble = {
 
 /* 
 #########################
-IRONY RECOGNITION TASK
+IRONY TASK
 #########################
 */
+
+
+/*
+
+Practice session - participants must have 75% accuracy to pass. 
+
+# now that i have the cresp i can do the practice session stuff. 
+
+*/
+
 
 const instructions_irony_practice = {
   type: jsPsychHtmlKeyboardResponse,
@@ -477,18 +433,17 @@ years_learning_english,
 english_activities, 
 self_ratings_english
 ]
-const ctest_timeline = [instructions_ctest, CT_trials]
 const lextale_timeline = [lextale_preamble, instructions_lextale, pre_lextale, lextale]
+
 const irony_timeline = [instructions_irony_practice, ready_hands, irony_practice_trials,instructions_irony_real, irony_trials]
 
 
 // use spread operator (...) to push the arrays
 timeline.push(
-  browser_check,
- ...introduction,
-  ...demographic_timeline,
+ // browser_check,
+ //...introduction,
+  //...demographic_timeline,
   ...irony_timeline,
- ...ctest_timeline,
   ...lextale_timeline,
   end_experiment
 );

@@ -1,13 +1,9 @@
 # BD_replications
  
- - online behavioural experiments to replicate some L2 ironny studies
+ - online behavioural experiments to replicate some L2 irony studies
  - a t/f task
  - an emotional decision task
 
-
-m‚Äôappelle
-Beth‚Äôs
-Bill‚Äôs 
-
-
-‚Äô
+TODO
+- code irony practice session
+- code irony session

@@ -1,6 +1,5 @@
-var listA_stimuli = [
+[
   {
-    "item": "D1",
     "s1": "Afflicted with a mysterious skin condition on his behind, Ross seeks advice from Phoebe's herbalist.",
     "s2": "He feels uneasy about exposing his buttocks to the man, but finally he gets convinced and the herbalist gives him some mysterious ointments.",
     "s3": "After two weeks of applying them regularly, Ross says:",
@@ -16,10 +15,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 2000,
+    "Question": "It was Phoebe who recommended the doctor to Ross.",
+    "CorrectResponse": "z",
+    "item": "D1",
     data: {item: 'D1', condition: 'distracter'}
   },
   {
-    "item": "D2",
     "s1": "Chandler and Joey are with Monica at the beach, where she gets stung by a jellyfish.",
     "s2": "Joey, who saw a feature on the Discovery Channel, suggests peeing on the sting, but gets scared, so Chandler finally does it.",
     "s3": "Monica says to the guys:",
@@ -35,10 +36,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "Phoebe got stung by a wasp.",
+    "CorrectResponse": "{/}",
+    "item": "D2",
     data: {item: 'D2', condition: 'distracter'}
   },
   {
-    "item": "D3",
     "s1": "Chandler is planning to propose to Monica, but he wants it to be a surprise.",
     "s2": "He keeps telling her that he never wants to get married and she starts to believe it and leaves their apartment all in tears, heading to her ex-boyfriend Richard.",
     "s3": "Chandler says to Joey:",
@@ -54,10 +57,12 @@ var listA_stimuli = [
     "t1_time": 2000,
     "t2_time": 1600,
     "t3_time": 2400,
+    "Question": "Chandler is a fierce opponent of marriage.",
+    "CorrectResponse": "z",
+    "item": "D3",
     data: {item: 'D3', condition: 'distracter'}
   },
   {
-    "item": "D4",
     "s1": "Joey and Chandler adopt a baby chick and a duck.",
     "s2": "They are having great fun organising chick and duck races, when Chandler's girlfriend Janice comes to visit him.",
     "s3": "When she sees her boyfriend engaging in such ridiculous activities, she says to Chandler:",
@@ -73,10 +78,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 1200,
     "t3_time": 400,
+    "Question": "Janice didn't like the idea of keeping chicks and ducks at home.",
+    "CorrectResponse": "z",
+    "item": "D4",
     data: {item: 'D4', condition: 'distracter'}
   },
   {
-    "item": "D5",
     "s1": "Joey gets chosen to play the role of Dr. Drake Ramoray, a neurosurgeon on Days of Our Lives after he sleeps with the casting lady.",
     "s2": "However, he makes his friends believe that he\\n got picked only thanks to his remarkable acting skills.",
     "s3": "Chandler says:",
@@ -92,10 +99,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 2000,
     "t3_time": 800,
+    "Question": "Joey got picked for the role of Mozart in \"Amadeus\".",
+    "CorrectResponse": "{/}",
+    "item": "D5",
     data: {item: 'D5', condition: 'distracter'}
   },
   {
-    "item": "D6",
     "s1": "Joey gives Chandler an extremely tacky engraved gold bracelet, telling him that this shall be the symbol of their enduring friendship.",
     "s2": "Chandler pretends he likes the bracelet but never wears it which makes Joey suspicious.",
     "s3": "Joey says to Chandler:",
@@ -111,10 +120,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 1600,
     "t3_time": 800,
+    "Question": "Chandler gave Joey a gold bracelet.",
+    "CorrectResponse": "z",
+    "item": "D6",
     data: {item: 'D6', condition: 'distracter'}
   },
   {
-    "item": "D7",
     "s1": "Joey is dating Ross's work colleague Charlie who is a paleonthologist too.",
     "s2": "When the whole group goes to Barbados to accompany Ross on a paleonthologists' conference, it quickly turns out that Joey and Charlie have little in common.",
     "s3": "They decide to break up and Joey is in great pain, so to console him Ross says to him:",
@@ -130,10 +141,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 2000,
     "t3_time": 2000,
+    "Question": "Charlie is an ophthalmologist.",
+    "CorrectResponse": "z",
+    "item": "D7",
     data: {item: 'D7', condition: 'distracter'}
   },
   {
-    "item": "D8",
     "s1": "Monica and Chandler decide not to host Thanksgiving but Phoebe convinces them to by appealing to Monica's competitive nature.",
     "s2": "Chandler helps out for the first time by making Cranberry sauce and surprisingly, Monica lets him.",
     "s3": "The sauce is a disaster, but Monica decides to be supportive, so she says to Chandler:",
@@ -149,10 +162,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 2000,
     "t3_time": 1200,
+    "Question": "Chandler doesn't cook very well.",
+    "CorrectResponse": "{/}",
+    "item": "D8",
     data: {item: 'D8', condition: 'distracter'}
   },
   {
-    "item": "D9",
     "s1": "Monica cooks a gourmet meal for a restaurateur named Steve, who is looking for a new chef.",
     "s2": "Unfortunately, he's stoned and would just as well eat McDonald's french fries as her haute cuisine.",
     "s3": "As a result, Monica doesn't get the job and he says to Rachel:",
@@ -168,10 +183,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 1200,
     "t3_time": 800,
+    "Question": "Monica prepared french fries to impress the famous restaurateur, Steve.",
+    "CorrectResponse": "{/}",
+    "item": "D9",
     data: {item: 'D9', condition: 'distracter'}
   },
   {
-    "item": "D10",
     "s1": "Monica decides to pay an unexpected visit to her boyfriend Chandler in Tulsa, where he had moved recently for his new job.",
     "s2": "However, he's watching porn on the hotel television and when she arrives he, in panic, switches channels to a shark documentary.",
     "s3": "He leads Monica to believe the sea creatures turn him on and Monica says to him:",
@@ -187,10 +204,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 2000,
+    "Question": "Monica visited Chandler in his new apartment in Toledo.",
+    "CorrectResponse": "{/}",
+    "item": "D10",
     data: {item: 'D10', condition: 'distracter'}
   },
   {
-    "item": "D11",
     "s1": "Phoebe adopts an orphaned rat family and she invites her new boyfriend David, who is a physicist, to her apartment.",
     "s2": "When David finds out she's keeping rats at home, he is terribly scared and lists to Phoebe all the diseases she can possibly contract from her new pets.",
     "s3": "Phoebe refuses to get rid of them and says to him:",
@@ -206,10 +225,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 1200,
     "t3_time": 800,
+    "Question": "Phoebe's boyfriend is a physicist.",
+    "CorrectResponse": "z",
+    "item": "D11",
     data: {item: 'D11', condition: 'distracter'}
   },
   {
-    "item": "D12",
     "s1": "Phoebe catches chicken pox just as her old flame Ryan arrives in town on leave from the Navy.",
     "s2": "Even though he hasn't yet had chicken pox, he can't stand to be apart.",
     "s3": "They both spend the rest of the time sick trying to not scratch at the sore, and Ryan says to her:",
@@ -225,10 +246,12 @@ var listA_stimuli = [
     "t1_time": 2400,
     "t2_time": 2000,
     "t3_time": 1600,
+    "Question": "Ryan has never has chicken pox before.",
+    "CorrectResponse": "{/}",
+    "item": "D12",
     data: {item: 'D12', condition: 'distracter'}
   },
   {
-    "item": "D13",
     "s1": "Phoebe has been a vegetarian for her entire life, but when she gets pregnant with the triplets she feels compelled to finally start eating meat.",
     "s2": "Hardly a day passes without her eating a huge raw steak.",
     "s3": "She says to her friend Rachel:",
@@ -244,10 +267,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "Phoebe is pregnant with triplets.",
+    "CorrectResponse": "{/}",
+    "item": "D13",
     data: {item: 'D13', condition: 'distracter'}
   },
   {
-    "item": "D14",
     "s1": "Phoebe is discovered by a record producer who wants to make her song \"Smelly Cat\" a video, but who secretly dubs in the voice of a more talented woman.",
     "s2": "Phoebe feels betrayed and she promises to take revenge on the producer.",
     "s3": "She tells her friends:",
@@ -263,10 +288,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 1600,
     "t3_time": 1200,
+    "Question": "Phoebe is the author of a famous song: \"Smelly Feet\".",
+    "CorrectResponse": "z",
+    "item": "D14",
     data: {item: 'D14', condition: 'distracter'}
   },
   {
-    "item": "D15",
     "s1": "Phoebe is trying to teach Joey some French for his audition for a theatre play.",
     "s2": "She asks him to repeat the sentence:\"Je m'appelle Claude\", but he keeps mispronouncing it as: \" Je de coup Clow\".",
     "s3": "Phoebe gets irritated and refuses to teach him any longer, saying:",
@@ -282,10 +309,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 1200,
     "t3_time": 400,
+    "Question": "Phoebe is teaching Joey how to speak French.",
+    "CorrectResponse": "z",
+    "item": "D15",
     data: {item: 'D15', condition: 'distracter'}
   },
   {
-    "item": "D16",
     "s1": "Rachel and Monica had a neighbour upstairs, Mr Heckles, every conversation  with whom broke out into a row.",
     "s2": "However, when he died, he left all his belongings to Monica and Rachel.",
     "s3": "Rachel said to Monica:",
@@ -301,10 +330,12 @@ var listA_stimuli = [
     "t1_time": 2000,
     "t2_time": 2000,
     "t3_time": 800,
+    "Question": "Mr Heckles was Monica's grandfather.",
+    "CorrectResponse": "{/}",
+    "item": "D16",
     data: {item: 'D16', condition: 'distracter'}
   },
   {
-    "item": "D17",
     "s1": "Rachel arrives at Central Perk after running away from her wedding to her fianc√© Barry and moves into her high school friend Monica.",
     "s2": "When Ross, who's had a crush on Rachel since high school, sees her at Monica's, he starts trying to rekindle their relationship.",
     "s3": "Ross says to Rachel:",
@@ -320,10 +351,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 2400,
     "t3_time": 800,
+    "Question": "Ross still has feelings for his high school sweetheart Rachel.",
+    "CorrectResponse": "{/}",
+    "item": "D17",
     data: {item: 'D17', condition: 'distracter'}
   },
   {
-    "item": "D18",
     "s1": "Rachel begins working at Bloomingdale's, an upscale department store chain, and Ross becomes jealous of her colleague, Mark.",
     "s2": "Rachel, tired of the constant accusations of infidelity, decides to break up with him.",
     "s3": "Ross says to Rachel:",
@@ -339,10 +372,12 @@ var listA_stimuli = [
     "t1_time": 2000,
     "t2_time": 2400,
     "t3_time": 2400,
+    "Question": "Rachel took up a job at Bloomingdale's.",
+    "CorrectResponse": "{/}",
+    "item": "D18",
     data: {item: 'D18', condition: 'distracter'}
   },
   {
-    "item": "D19",
     "s1": "Rachel is going to move to Paris and Ross, realizing  he loves her, chases after her to the airport.",
     "s2": "Rachel realizes she loves him, too, and cancels her flight.",
     "s3": "When the two meet at the airport, she says to him:",
@@ -358,10 +393,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "Rachel is going to move out ouf New York.",
+    "CorrectResponse": "z",
+    "item": "D19",
     data: {item: 'D19', condition: 'distracter'}
   },
   {
-    "item": "D20",
     "s1": "Rachel is in labor with Ross's baby and when they are in hospital, Ross's mother gives Ross her engagement ring so that he can propose to Rachel.",
     "s2": "Joey finds Ross's engagement ring on the floor in Rachel's room and he kneels to pick it up.",
     "s3": "Rachel thinks he's proposing and says to him:",
@@ -377,10 +414,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 1200,
     "t3_time": 800,
+    "Question": "Ross was going to propose to Rachel.",
+    "CorrectResponse": "{/}",
+    "item": "D20",
     data: {item: 'D20', condition: 'distracter'}
   },
   {
-    "item": "D21",
     "s1": "Rachel is known for her lack of cooking skills, but to  prove her friends wrong, she decided to prepare the most\\ndelicious cake for Thanksgiving.",
     "s2": "However, she mixed up two \\ndifferent recipes and instead of strawberry jam, she put pork\\n into the cake.",
     "s3": "Ross said to the rest of the friends:",
@@ -396,10 +435,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 2000,
     "t3_time": 1200,
+    "Question": "Rachel prepared a Christmas pudding.",
+    "CorrectResponse": "{/}",
+    "item": "D21",
     data: {item: 'D21', condition: 'distracter'}
   },
   {
-    "item": "D22",
     "s1": "Ross buys himself a pet monkey called Marcel, but  it turns out that he owns it illegally as he doesn't have a permit.",
     "s2": "He decides to give Marcel to a film-making company and the monkey becomes a film star in California",
     "s3": "After Marcel is gone, Ross says:",
@@ -415,10 +456,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 800,
+    "Question": "Ross bought himself a parrot.",
+    "CorrectResponse": "z",
+    "item": "D22",
     data: {item: 'D22', condition: 'distracter'}
   },
   {
-    "item": "D23",
     "s1": "Ross is compelled to make a choice between his childhood crush Rachel and his current lover Julie.",
     "s2": "He asks Joey and Chandler to help him make a list of the pros and cons of each, and he finally chooses Rachel.",
     "s3": "Rachel, however, finds the list and gets angry with Ross and says to him:",
@@ -434,10 +477,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 1200,
     "t3_time": 2400,
+    "Question": "Ross chose Rachel over Julie.",
+    "CorrectResponse": "z",
+    "item": "D23",
     data: {item: 'D23', condition: 'distracter'}
   },
   {
-    "item": "D24",
     "s1": "Ross is preparing for a very important date with his old sweatheart and decides to get a spray-on tan.",
     "s2": "After hearing seemingly straightforward instructions, he gets confused and accidentally gets a double dose on the front of his body and nothing on his back.",
     "s3": "He goes to the date looking ridiculous and the date is a disaster, and after the date he says:",
@@ -453,10 +498,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 1200,
     "t3_time": 800,
+    "Question": "Ross's date didn't like his fake tan.",
+    "CorrectResponse": "{/}",
+    "item": "D24",
     data: {item: 'D24', condition: 'distracter'}
   },
   {
-    "item": "EXP1",
     "s1": "A new professor was hired to teach philosophy, and he was supposed to be really sharp.",
     "s2": "When Allen asked several questions, the professor offered incisive and knowledgeable answers.",
     "s3": "Allen said:",
@@ -472,10 +519,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Allen thinks the professor is stupid.",
+    "CorrectResponse": "z",
+    "item": "EXP1",
     data: {item: 'EXP1', condition: 'literal praise'}
   },
   {
-    "item": "EXP2",
     "s1": "Alice told her roommate how afraid she was of taking a required calculus class, because she was sure she would fail.",
     "s2": "When the final grades were posted, Alice saw she had received an A.",
     "s3": "Alice turned to her roommate and said:",
@@ -491,10 +540,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "Alice thinks her math grade is great.",
+    "CorrectResponse": "{/}",
+    "item": "EXP2",
     data: {item: 'EXP2', condition: 'ironic praise'}
   },
   {
-    "item": "EXP3",
     "s1": "Alicia and her co-worker were social workers who were sent out to visit a family they were told lived in abject poverty.",
     "s2": "When they arrived they found themselves at a large comfortable home.",
     "s3": "Alicia said:",
@@ -510,10 +561,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "Alicia thinks the living conditions are good.",
+    "CorrectResponse": "{/}",
+    "item": "EXP3",
     data: {item: 'EXP3', condition: 'ironic praise'}
   },
   {
-    "item": "EXP4",
     "s1": "Audrey and her husband went on a discount cruise in the Caribbean and they expected very little because the trip was so cheap.",
     "s2": "When they arrived, they found that the cruise ship was bare and their cabin was small and uncomfortable.",
     "s3": "Audrey said:",
@@ -529,10 +582,12 @@ var listA_stimuli = [
     "t1_time": 400,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Audrey thinks the cruise ship is horrible.",
+    "CorrectResponse": "{/}",
+    "item": "EXP4",
     data: {item: 'EXP4', condition: 'literal criticism'}
   },
   {
-    "item": "EXP5",
     "s1": "Beth was looking forward to a fun weekend.",
     "s2": "Late on Friday afternoon, Beth's professor told her that there would be no reading assignment for the weekend.",
     "s3": "Beth said:",
@@ -548,10 +603,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 800,
+    "Question": "Beth thinks she will have a bad weekend.",
+    "CorrectResponse": "z",
+    "item": "EXP5",
     data: {item: 'EXP5', condition: 'literal praise'}
   },
   {
-    "item": "EXP6",
     "s1": "Bill's brother said he had too little energy to help Bill paint his den.",
     "s2": "When Bill stopped over at his brother's house later that day, his brother was dozing in the middle of a TV show.",
     "s3": "Bill said:",
@@ -567,10 +624,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 2000,
+    "Question": "Bill thinks that his brother is exhausted.",
+    "CorrectResponse": "{/}",
+    "item": "EXP6",
     data: {item: 'EXP6', condition: 'literal criticism'}
   },
   {
-    "item": "EXP7",
     "s1": "Bob and a co-worker had to fly to Chicago for an important meeting.The plane was scheduled to land at 5 p.m., just in time to make the meeting.",
     "s2": "Bob was very worried that they would miss the beginning of the meeting. The plane arrived an hour late.",
     "s3": "His co-worker said:",
@@ -586,10 +645,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Bob's co-worker thinks that they will be on time for the meeting.",
+    "CorrectResponse": "z",
+    "item": "EXP7",
     data: {item: 'EXP7', condition: 'literal criticism'}
   },
   {
-    "item": "EXP8",
     "s1": "Cathy was looking for a clean and quiet apartment and the rental agent told her he had found her the perfect apartment.",
     "s2": "The apartment he showed her was dark and cramped and located right over a railroad track.",
     "s3": "Cathy said:",
@@ -605,10 +666,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "Cathy thinks the apartment is great.",
+    "CorrectResponse": "z",
+    "item": "EXP8",
     data: {item: 'EXP8', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP9",
     "s1": "Charlie's friend asked Charlie to meet him for dinner to discuss something important and said that he would be sure to be there at seven sharp.",
     "s2": "Charlie arrived at seven o'clock sharp, and so did his friend.",
     "s3": "Charlie said:",
@@ -624,10 +687,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "Charlie thinks his friend arrived on time.",
+    "CorrectResponse": "{/}",
+    "item": "EXP9",
     data: {item: 'EXP9', condition: 'literal praise'}
   },
   {
-    "item": "EXP10",
     "s1": "Corrine and a friend went to a new movie even though it had been reviewed as the year's worst picture.",
     "s2": "Both found the movie riveting and the ending had them glued to their seats.",
     "s3": "Corrine said:",
@@ -643,10 +708,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1600,
+    "Question": "Corrine thinks the movie was entertaining.",
+    "CorrectResponse": "{/}",
+    "item": "EXP10",
     data: {item: 'EXP10', condition: 'ironic praise'}
   },
   {
-    "item": "EXP11",
     "s1": "Frank's cousin considered himself to be very entertaining.",
     "s2": "One evening he told a story about an ordinary shopping trip to the mall, and all the long lines he encountered.",
     "s3": "Frank said:",
@@ -662,10 +729,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Frank thinks his cousin's story about the mall is interesting.",
+    "CorrectResponse": "z",
+    "item": "EXP11",
     data: {item: 'EXP11', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP12",
     "s1": "Gail's friend asked her to come with her to a lecture on global warming and she went, even though she said she thought it would be of no interest.",
     "s2": "She found the lecture to be deadly, and she did not want to ask any questions.",
     "s3": "Gail's friend said:",
@@ -681,10 +750,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Gail's friend thinks the lecture was exciting.",
+    "CorrectResponse": "z",
+    "item": "EXP12",
     data: {item: 'EXP12', condition: 'literal criticism'}
   },
   {
-    "item": "EXP13",
     "s1": "Heidi's boss was looking forward to his weekend getaway.",
     "s2": "Just before he was to leave,  Heidi arrived at his office to pick up a huge load of documents that he had finished",
     "s3": "He said:",
@@ -700,10 +771,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 2000,
     "t3_time": 800,
+    "Question": "Heidi's boss thinks he won't enjoy his weekend.",
+    "CorrectResponse": "z",
+    "item": "EXP13",
     data: {item: 'EXP13', condition: 'literal praise'}
   },
   {
-    "item": "EXP14",
     "s1": "It was Jen's first day at her new teaching job and she heard that the students were excited and interested.",
     "s2": "She had prepared a stimulating lecture and the students were alert and asked many thoughtful questions.",
     "s3": "Jen said:",
@@ -719,10 +792,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Jen thinks the students are enthusiastic.",
+    "CorrectResponse": "{/}",
+    "item": "EXP14",
     data: {item: 'EXP14', condition: 'literal praise'}
   },
   {
-    "item": "EXP15",
     "s1": "James asked his roommate for help in chemistry.",
     "s2": "James said he could catch on quickly, but it took him two hours to grasp one elementary concept.",
     "s3": "His roommate said:",
@@ -738,10 +813,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "James' roommate thinks James is learning chemistry slowly.",
+    "CorrectResponse": "{/}",
+    "item": "EXP15",
     data: {item: 'EXP15', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP16",
     "s1": "James told his friend he was sure he would fail his first physics exam.",
     "s2": "When the teacher handed back the grades, she announced that James had gotten a zero.",
     "s3": "His friend said:",
@@ -757,10 +834,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "His friend thinks that James did well on the test.",
+    "CorrectResponse": "z",
+    "item": "EXP16",
     data: {item: 'EXP16', condition: 'literal criticism'}
   },
   {
-    "item": "EXP17",
     "s1": "Jane was at her college reunion, where she ran into many old acquaintances.",
     "s2": "All the people she knew in college were snobby and showed no interest in Jane's life.",
     "s3": "Jane said:",
@@ -776,10 +855,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "Jane thinks going to the reunion was a mistake.",
+    "CorrectResponse": "{/}",
+    "item": "EXP17",
     data: {item: 'EXP17', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP18",
     "s1": "Jeanne had postponed her holiday shopping until two days before Christmas.",
     "s2": "Her friend didn't want to go shopping with her because she was sure the crowds would be terrible.",
     "s3": "When they arrived at the mall there was hardly a soul there and Jeanne said:",
@@ -795,10 +876,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 800,
+    "Question": "Jeanne thinks the mall is busy with holiday shoppers.",
+    "CorrectResponse": "z",
+    "item": "EXP18",
     data: {item: 'EXP18', condition: 'ironic praise'}
   },
   {
-    "item": "EXP19",
     "s1": "Jennifer said she loved greasy, fattening food.",
     "s2": "When her friend opened Jennifer's fridge to get a snack, She found pizza and french fries in the refrigerator and candy and chips in the cabinet",
     "s3": "Her friend said:",
@@ -814,10 +897,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 800,
+    "Question": "Jennifer's friend thinks that Jennifer eats unhealthy foods.",
+    "CorrectResponse": "{/}",
+    "item": "EXP19",
     data: {item: 'EXP19', condition: 'literal criticism'}
   },
   {
-    "item": "EXP20",
     "s1": "Jerome and a friend were at a rock concert.",
     "s2": "Jerome said he had seen pictures of the male lead singer, and he was very unattractive and, indeed, when he came on stage, the women in the audience didn't respond at all.",
     "s3": "Jerome's friend said:",
@@ -833,10 +918,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 400,
     "t3_time": 1600,
+    "Question": "Jerome's friend thinks that the women are not attracted to the singer.",
+    "CorrectResponse": "{/}",
+    "item": "EXP20",
     data: {item: 'EXP20', condition: 'literal criticism'}
   },
   {
-    "item": "EXP21",
     "s1": "Joanne always bragged about her looks.",
     "s2": "On New Year's Eve, she wore a new dress that was slinky and made her waist look really tiny.",
     "s3": "Her roommate watched as she paraded in front of the mirror and said to her:",
@@ -852,10 +939,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "Joanne's roommate thinks that Joanne looks bad in her new dress.",
+    "CorrectResponse": "z",
+    "item": "EXP21",
     data: {item: 'EXP21', condition: 'literal praise'}
   },
   {
-    "item": "EXP22",
     "s1": "Joe had a job interview and his friend told him to be well prepared.",
     "s2": "Joe decided to go out drinking before the interview instead.",
     "s3": "Joe's friend said:",
@@ -871,10 +960,12 @@ var listA_stimuli = [
     "t1_time": 2400,
     "t2_time": 1200,
     "t3_time": 1600,
+    "Question": "Joe's friend thinks Joe is poorly prepared for the interview.",
+    "CorrectResponse": "{/}",
+    "item": "EXP22",
     data: {item: 'EXP22', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP23",
     "s1": "Joel and his friend had to go to a bad part of town known for a high crime rate.",
     "s2": "When they arrived they found that the neighborhood was a lot like their own: it was clean and filled with respectable looking people.",
     "s3": "Joel said to his friend:",
@@ -890,10 +981,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "Joel thinks the neighborhood is safe.",
+    "CorrectResponse": "{/}",
+    "item": "EXP23",
     data: {item: 'EXP23', condition: 'ironic praise'}
   },
   {
-    "item": "EXP24",
     "s1": "Joseph said he wouldn't let on about the surprise birthday party on Friday evening for his sister.",
     "s2": "On Friday afternoon, his sister asked him what he was doing that night and Joseph said he had made some plans to see some friends.",
     "s3": "Later, Joseph's mother said:",
@@ -909,10 +1002,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "Joseph's mother thinks that he is good at keeping secrets.",
+    "CorrectResponse": "{/}",
+    "item": "EXP24",
     data: {item: 'EXP24', condition: 'literal praise'}
   },
   {
-    "item": "EXP25",
     "s1": "Julie took her boyfriend skiing.He had never been on skis, and he said he was afraid he would look like an oaf.",
     "s2": "On his first run, he just skied terribly, turning jerkily and falling at every turn.",
     "s3": "Julie said:",
@@ -928,10 +1023,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 400,
     "t3_time": 1200,
+    "Question": "Julie thinks that her boyfriend is a good skier.",
+    "CorrectResponse": "z",
+    "item": "EXP25",
     data: {item: 'EXP25', condition: 'literal criticism'}
   },
   {
-    "item": "EXP26",
     "s1": "June took her first roll of film.",
     "s2": "Since she was a beginning photographer, she expected the pictures would come out poorly and, indeed, they came out terribly.",
     "s3": "She said to her friend:",
@@ -947,10 +1044,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "June thinks she is a bad photographer",
+    "CorrectResponse": "{/}",
+    "item": "EXP26",
     data: {item: 'EXP26', condition: 'literal criticism'}
   },
   {
-    "item": "EXP27",
     "s1": "Kelly's classmate asked him to explain the calculus assignment to him.",
     "s2": "Instead of explaining things, Kelly mostly bragged about how smart he was.",
     "s3": "His classmate said:",
@@ -966,10 +1065,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 400,
     "t3_time": 1200,
+    "Question": "Kelly's classmate thinks Kelly's instruction was worthwhile.",
+    "CorrectResponse": "z",
+    "item": "EXP27",
     data: {item: 'EXP27', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP28",
     "s1": "Ken reluctantly took an office job as a temp because he really needed money.",
     "s2": "He told his friend the work would probably be mindless and low-level work and, indeed, his first assignment was boring and unchallenging.",
     "s3": "Ken said to his friend:",
@@ -985,10 +1086,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "Ken thinks that the temp work is dull.",
+    "CorrectResponse": "{/}",
+    "item": "EXP28",
     data: {item: 'EXP28', condition: 'literal criticism'}
   },
   {
-    "item": "EXP29",
     "s1": "Kevin heard that his new roommate was a real stand-up comedian.",
     "s2": "The first day they met, his new roommate made one hilarious joke after another.",
     "s3": "Kevin said:",
@@ -1004,10 +1107,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "Kevin thinks the jokes are dull.",
+    "CorrectResponse": "z",
+    "item": "EXP29",
     data: {item: 'EXP29', condition: 'literal praise'}
   },
   {
-    "item": "EXP30",
     "s1": "Marcie bought a used car for a very low price.",
     "s2": "She took it to her mechanic for a tune-up, and told him about the great deal she had gotten on the car.",
     "s3": "After he had checked the car, he told her that it had an excellent engine and excellent brakes, and he commented:",
@@ -1023,10 +1128,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "The mechanic thinks Marcie made a good purchase.",
+    "CorrectResponse": "{/}",
+    "item": "EXP30",
     data: {item: 'EXP30', condition: 'literal praise'}
   },
   {
-    "item": "EXP31",
     "s1": "Marco wanted to attend a lecture about job hunting, but his friend resisted, saying that the talk would be of no help at all.",
     "s2": "Still, Marco dragged his friend along.",
     "s3": "At the lecture, his friend got a great lead on a dream job and said:",
@@ -1042,10 +1149,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 2000,
     "t3_time": 800,
+    "Question": "Marco's friend thinks the lecture was helpful.",
+    "CorrectResponse": "{/}",
+    "item": "EXP31",
     data: {item: 'EXP31', condition: 'ironic praise'}
   },
   {
-    "item": "EXP32",
     "s1": "Maryellen expected to rough it when she went camping on a remote island off the coast of Maine.",
     "s2": "When she arrived, she found camping grounds with running water and hot showers.",
     "s3": "Maryellen said:",
@@ -1061,10 +1170,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "Maryellen thinks the camping facilities are good.",
+    "CorrectResponse": "{/}",
+    "item": "EXP32",
     data: {item: 'EXP32', condition: 'ironic praise'}
   },
   {
-    "item": "EXP33",
     "s1": "Matt was doing his comedy act at a nightclub's amateur night",
     "s2": "His friends had told him that his jokes were always terrific and during his act the crowd roared with laughter.",
     "s3": "Matt said:",
@@ -1080,10 +1191,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Matt thinks his jokes were boring.",
+    "CorrectResponse": "z",
+    "item": "EXP33",
     data: {item: 'EXP33', condition: 'literal praise'}
   },
   {
-    "item": "EXP34",
     "s1": "Mike and his friend were watching an interview with a famous artist who  said that his son had exceptional talent in drawing.",
     "s2": "The artist held up a drawing his three-year-old son had made.",
     "s3": "It was just a simple scribble and Mike said:",
@@ -1099,10 +1212,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 1600,
+    "Question": "Mike thinks the drawing is good for a three-year-old.",
+    "CorrectResponse": "z",
+    "item": "EXP34",
     data: {item: 'EXP34', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP35",
     "s1": "Patty was watching a political debate and one of the candidates said he would take on anyone who cared to argue with him.",
     "s2": "When the candidate's positions were challenged by someone from the audience, he stumbled and couldn't answer.",
     "s3": "Patty said:",
@@ -1118,10 +1233,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 800,
     "t3_time": 2000,
+    "Question": "Patty thinks the politician is a talented public speaker.",
+    "CorrectResponse": "z",
+    "item": "EXP35",
     data: {item: 'EXP35', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP36",
     "s1": "Peter got caught in a meeting late Friday afternoon and he was tensely expecting really bad traffic on the highway home.",
     "s2": "When he got on the highway he found that the traffic was very light and the road nearly deserted.",
     "s3": "Peter said:",
@@ -1137,10 +1254,12 @@ var listA_stimuli = [
     "t1_time": 400,
     "t2_time": 800,
     "t3_time": 2000,
+    "Question": "Peter thinks that the road is crowded.",
+    "CorrectResponse": "z",
+    "item": "EXP36",
     data: {item: 'EXP36', condition: 'ironic praise'}
   },
   {
-    "item": "EXP37",
     "s1": "Rachel and a friend were on a gambling trip and they hoped to win a pile of money.",
     "s2": "After one hour, Rachel and her friend had lost all their money",
     "s3": "Rachel said:",
@@ -1156,10 +1275,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "Rachel thinks gambling is a poor way to make money.",
+    "CorrectResponse": "{/}",
+    "item": "EXP37",
     data: {item: 'EXP37', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP38",
     "s1": "Ray postponed going to the DMV to get his driver's license because he hated the long lines.",
     "s2": "When he arrived, he was very surprised to see only one person ahead of him in line.",
     "s3": "Ray said:",
@@ -1175,10 +1296,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "Ray thinks the line is long.",
+    "CorrectResponse": "z",
+    "item": "EXP38",
     data: {item: 'EXP38', condition: 'ironic praise'}
   },
   {
-    "item": "EXP39",
     "s1": "Sally and her roommate were having a cook-out.",
     "s2": "The forecast predicted that it would clear up, though it had been overcast all day.",
     "s3": "Just as they started the barbecue, it began to rain, and Sally said:",
@@ -1194,10 +1317,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "Sally thinks the weather forecast was inaccurate.",
+    "CorrectResponse": "{/}",
+    "item": "EXP39",
     data: {item: 'EXP39', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP40",
     "s1": "Sam complained to his mother that he had too much homework, which he said would take him the whole weekend.",
     "s2": "On Saturday morning, he started his work, and was all done in one hour.",
     "s3": "His mother said:",
@@ -1213,10 +1338,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "Sam's mother thinks that Sam has a great deal of homework to do",
+    "CorrectResponse": "z",
+    "item": "EXP40",
     data: {item: 'EXP40', condition: 'ironic praise'}
   },
   {
-    "item": "EXP41",
     "s1": "Sandra was very weight-conscious.",
     "s2": "One month, she gained pounds and she told her friend she was getting fat.",
     "s3": "Her friend said:",
@@ -1232,10 +1359,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "Sandra's friend thinks that Sandra is thin.",
+    "CorrectResponse": "z",
+    "item": "EXP41",
     data: {item: 'EXP41', condition: 'literal criticism'}
   },
   {
-    "item": "EXP42",
     "s1": "Sarah was looking forward to a pleasant holiday dinner with her entire family.",
     "s2": "At dinner, the fights began, and by the end, everyone was miserable.",
     "s3": "Sarah said:",
@@ -1251,10 +1380,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Sarah thinks the evening was tense.",
+    "CorrectResponse": "{/}",
+    "item": "EXP42",
     data: {item: 'EXP42', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP43",
     "s1": "Steve's statistics professor had a reputation for giving really difficult exams and refusing to curve the grades.",
     "s2": "The first exam he gave was a breeze and everyone finished long before the hour was up.",
     "s3": "Steve said:",
@@ -1270,10 +1401,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Steve thinks the exam was difficult.",
+    "CorrectResponse": "z",
+    "item": "EXP43",
     data: {item: 'EXP43', condition: 'ironic praise'}
   },
   {
-    "item": "EXP44",
     "s1": "Steven's friend said he only read trashy novels because he wasn't smart enough to read serious stuff.",
     "s2": "When Steven went to his friend's apartment he saw only romance novels and sports magazines.",
     "s3": "Steven said:",
@@ -1289,10 +1422,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 400,
     "t3_time": 1200,
+    "Question": "Steven thinks that his friend reads difficult material.",
+    "CorrectResponse": "z",
+    "item": "EXP44",
     data: {item: 'EXP44', condition: 'literal criticism'}
   },
   {
-    "item": "EXP45",
     "s1": "Susan and her roommate were having a party and they thought it would be easy to cook a gourmet meal with a very small budget.",
     "s2": "They had so little money that all they could serve was canned pork and beans",
     "s3": "Susan's roommate said:",
@@ -1308,10 +1443,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 1600,
     "t3_time": 1600,
+    "Question": "Susan's roommate thinks the dinner party was a success.",
+    "CorrectResponse": "z",
+    "item": "EXP45",
     data: {item: 'EXP45', condition: 'ironic criticism'}
   },
   {
-    "item": "EXP46",
     "s1": "The students in Annette's class all had to do a group project.",
     "s2": "When it was time to get started, they got to work, and got it done early.",
     "s3": "Annette said:",
@@ -1327,10 +1464,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Annette thinks they did a good job.",
+    "CorrectResponse": "{/}",
+    "item": "EXP46",
     data: {item: 'EXP46', condition: 'literal praise'}
   },
   {
-    "item": "EXP47",
     "s1": "Tim was bringing a friend to the neighborhood block party and he warned his friend that the party would probably be a deadly bore.",
     "s2": "To everyone's amazement, a famous comedian was at the party, entertaining everyone with his humor.",
     "s3": "Tim's friend said:",
@@ -1346,10 +1485,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Tim's friend thinks the party was boring.",
+    "CorrectResponse": "z",
+    "item": "EXP47",
     data: {item: 'EXP47', condition: 'ironic praise'}
   },
   {
-    "item": "EXP48",
     "s1": "Tony was anxiously awaiting his SAT scores and he knew his parents expected him to do well.",
     "s2": "When his scores arrived, he was pretty thrilled, because his scores were the highest in his class.",
     "s3": "Tony said:",
@@ -1365,10 +1506,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1600,
     "t3_time": 1200,
+    "Question": "Tony thinks that his parents will be impressed with his scores.",
+    "CorrectResponse": "{/}",
+    "item": "EXP48",
     data: {item: 'EXP48', condition: 'literal praise'}
   },
   {
-    "item": "P1",
     "s1": "Alex went to a restaurant with his girlfriend and ordered an extremely expensive dish called \"A gourmet's dream\" hoping it would be delicious.",
     "s2": "When the waiter arrived with his order, it turned out that the dish was awfully bland and cold.",
     "s3": "Alex said to his girlfriend:",
@@ -1384,10 +1527,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 1600,
     "t3_time": 1600,
+    "Question": "Alex thinks the dish is delicious.",
+    "CorrectResponse": "z",
+    "item": "P1",
     data: {item: 'P1', condition: 'ironic criticism'}
   },
   {
-    "item": "P2",
     "s1": "Christie was going to take an important exam for which she was studying really hard.",
     "s2": "However, on the day of the exam she overslept and didn't manage to make it to the exam on time.",
     "s3": "Christie said to her friend:",
@@ -1403,10 +1548,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 1200,
     "t3_time": 1200,
+    "Question": "Christie thinks it's good that she overslept.",
+    "CorrectResponse": "z",
+    "item": "P2",
     data: {item: 'P2', condition: 'literal criticism'}
   },
   {
-    "item": "P3",
     "s1": "Eddie has been working really hard upon his M.A.thesis.",
     "s2": "One day before the submission deadline, his computer broke down and all files were missing, leaving him with no back-up copy.",
     "s3": "Eddie said to his friend:",
@@ -1422,10 +1569,12 @@ var listA_stimuli = [
     "t1_time": 2000,
     "t2_time": 1600,
     "t3_time": 1200,
+    "Question": "Eddie thinks he was stupid not to make a back-up copy of the file.",
+    "CorrectResponse": "{/}",
+    "item": "P3",
     data: {item: 'P3', condition: 'ironic criticism'}
   },
   {
-    "item": "P4",
     "s1": "Frank has been known for his lack of organisational skills.",
     "s2": "However, once he was appointed as a project manager and he handled it wonderfully, leading his team to success.",
     "s3": "His friend said to him:",
@@ -1441,10 +1590,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Frank's friend thinks he handled the project well.",
+    "CorrectResponse": "{/}",
+    "item": "P4",
     data: {item: 'P4', condition: 'ironic praise'}
   },
   {
-    "item": "P5",
     "s1": "Lisa, known for her lack of good taste, recommended a hairdresser to her friend, Susan.",
     "s2": "Susan expected the hairdresser to be rather untalented, but actually he made her hair look wonderfully.",
     "s3": "Susan said to Lisa:",
@@ -1460,10 +1611,12 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Susan was disappointed with the hairdresser.",
+    "CorrectResponse": "z",
+    "item": "P5",
     data: {item: 'P5', condition: 'literal praise'}
   },
   {
-    "item": "P6",
     "s1": "Mike has never been good at maths at school.",
     "s2": "However, when he took part in the national championships in arithmetics, he won the first place.",
     "s3": "His teacher told him:",
@@ -1479,10 +1632,12 @@ var listA_stimuli = [
     "t1_time": 1200,
     "t2_time": 800,
     "t3_time": 1200,
+    "Question": "Mike's teacher thinks he is skilled at maths.",
+    "CorrectResponse": "{/}",
+    "item": "P6",
     data: {item: 'P6', condition: 'literal praise'}
   },
   {
-    "item": "P7",
     "s1": "Rick's friend invited him to a rock concert but Rick didn't want to go saying the band is lousy.",
     "s2": "Quite unexpectedly, the band gave an amazing performance and Rick enjoyed the concert immensely.",
     "s3": "After the concert he said to his friend:",
@@ -1498,10 +1653,12 @@ var listA_stimuli = [
     "t1_time": 1600,
     "t2_time": 800,
     "t3_time": 800,
+    "Question": "Rick thinks the concert was poor.",
+    "CorrectResponse": "z",
+    "item": "P7",
     data: {item: 'P7', condition: 'ironic praise'}
   },
   {
-    "item": "P8",
     "s1": "Sheila was going to introduce her new boyfriend to her parents.",
     "s2": "Before they met she told them that he was an intelligent and cultural man, but when they finally met, her boyfriend just kept telling obscene stories and crude jokes at dinner.",
     "s3": "Sheila's parents said to her:",
@@ -1517,6 +1674,9 @@ var listA_stimuli = [
     "t1_time": 800,
     "t2_time": 2000,
     "t3_time": 1200,
+    "Question": "Sheila's parents don't like her new boyfriend.",
+    "CorrectResponse": "{/}",
+    "item": "P8",
     data: {item: 'P8', condition: 'literal criticism'}
   }
 ]
