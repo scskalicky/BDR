@@ -31,7 +31,7 @@ var info_sheet =
 
 + 
 
-"<p class = 'consent_prose'>If you agree to participate in this study, you will do a reading task and a series of tests/surveys. The whole procedure will take around 15 minutes. You can stop your participation in the study at any time, without giving a reason, even if it is part way through the session. If you withdraw, the information you provided will be destroyed. Please note that you participation is completely voluntary, and you are under no obligation to take part. Your grades will not be affected whether you agree to participate in this study or not.</p>" 
+"<p class = 'consent_prose'>If you agree to participate in this study, you will do a reading task and a series of tests/surveys. The whole procedure will take around 30 minutes. You can stop your participation in the study at any time, without giving a reason, even if it is part way through the session. If you withdraw, the information you provided will be destroyed. Please note that you participation is completely voluntary, and you are under no obligation to take part. Your grades will not be affected whether you agree to participate in this study or not.</p>" 
 
 + 
 
