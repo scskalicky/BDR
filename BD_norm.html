@@ -139,6 +139,7 @@ on_start: function(trial){
 },
   prompt: "",
   stimulus: '',
+  data: jsPsych.timelineVariable('data'),
   // the resulting values are 0,1,2,3
   choices: ['Not Ironic', 'Slightly Ironic', 'Moderately Ironic', 'Very Ironic'],
   on_finish: function(data){
