@@ -1,4 +1,4 @@
-[
+var stimuli_b = [
   {
     "s1": "Afflicted with a mysterious skin condition on his behind, Ross seeks advice from Phoebe's herbalist.",
     "s2": "He feels uneasy about exposing his buttocks to the man, but finally he gets convinced and the herbalist gives him some mysterious ointments.",
@@ -16,7 +16,7 @@
     "t2_time": 1200,
     "t3_time": 2000,
     "Question": "It was Phoebe who recommended the doctor to Ross.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "D1",
     data: {item: 'D1', condition: 'distracter'}
   },
@@ -37,7 +37,7 @@
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "Phoebe got stung by a wasp.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D2",
     data: {item: 'D2', condition: 'distracter'}
   },
@@ -58,7 +58,7 @@
     "t2_time": 1600,
     "t3_time": 2400,
     "Question": "Chandler is a fierce opponent of marriage.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "D3",
     data: {item: 'D3', condition: 'distracter'}
   },
@@ -79,7 +79,7 @@
     "t2_time": 1200,
     "t3_time": 400,
     "Question": "Janice didn't like the idea of keeping chicks and ducks at home.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "D4",
     data: {item: 'D4', condition: 'distracter'}
   },
@@ -100,7 +100,7 @@
     "t2_time": 2000,
     "t3_time": 800,
     "Question": "Joey got picked for the role of Mozart in \"Amadeus\".",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D5",
     data: {item: 'D5', condition: 'distracter'}
   },
@@ -121,7 +121,7 @@
     "t2_time": 1600,
     "t3_time": 800,
     "Question": "Chandler gave Joey a gold bracelet.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "D6",
     data: {item: 'D6', condition: 'distracter'}
   },
@@ -142,7 +142,7 @@
     "t2_time": 2000,
     "t3_time": 2000,
     "Question": "Charlie is an ophthalmologist.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "D7",
     data: {item: 'D7', condition: 'distracter'}
   },
@@ -163,7 +163,7 @@
     "t2_time": 2000,
     "t3_time": 1200,
     "Question": "Chandler doesn't cook very well.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D8",
     data: {item: 'D8', condition: 'distracter'}
   },
@@ -184,7 +184,7 @@
     "t2_time": 1200,
     "t3_time": 800,
     "Question": "Monica prepared french fries to impress the famous restaurateur, Steve.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D9",
     data: {item: 'D9', condition: 'distracter'}
   },
@@ -205,7 +205,7 @@
     "t2_time": 1200,
     "t3_time": 2000,
     "Question": "Monica visited Chandler in his new apartment in Toledo.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D10",
     data: {item: 'D10', condition: 'distracter'}
   },
@@ -226,7 +226,7 @@
     "t2_time": 1200,
     "t3_time": 800,
     "Question": "Phoebe's boyfriend is a physicist.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "D11",
     data: {item: 'D11', condition: 'distracter'}
   },
@@ -247,7 +247,7 @@
     "t2_time": 2000,
     "t3_time": 1600,
     "Question": "Ryan has never has chicken pox before.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D12",
     data: {item: 'D12', condition: 'distracter'}
   },
@@ -268,7 +268,7 @@
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "Phoebe is pregnant with triplets.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D13",
     data: {item: 'D13', condition: 'distracter'}
   },
@@ -289,7 +289,7 @@
     "t2_time": 1600,
     "t3_time": 1200,
     "Question": "Phoebe is the author of a famous song: \"Smelly Feet\".",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "D14",
     data: {item: 'D14', condition: 'distracter'}
   },
@@ -310,7 +310,7 @@
     "t2_time": 1200,
     "t3_time": 400,
     "Question": "Phoebe is teaching Joey how to speak French.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "D15",
     data: {item: 'D15', condition: 'distracter'}
   },
@@ -331,7 +331,7 @@
     "t2_time": 2000,
     "t3_time": 800,
     "Question": "Mr Heckles was Monica's grandfather.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D16",
     data: {item: 'D16', condition: 'distracter'}
   },
@@ -352,7 +352,7 @@
     "t2_time": 2400,
     "t3_time": 800,
     "Question": "Ross still has feelings for his high school sweetheart Rachel.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D17",
     data: {item: 'D17', condition: 'distracter'}
   },
@@ -373,7 +373,7 @@
     "t2_time": 2400,
     "t3_time": 2400,
     "Question": "Rachel took up a job at Bloomingdale's.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D18",
     data: {item: 'D18', condition: 'distracter'}
   },
@@ -394,7 +394,7 @@
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "Rachel is going to move out ouf New York.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "D19",
     data: {item: 'D19', condition: 'distracter'}
   },
@@ -415,7 +415,7 @@
     "t2_time": 1200,
     "t3_time": 800,
     "Question": "Ross was going to propose to Rachel.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D20",
     data: {item: 'D20', condition: 'distracter'}
   },
@@ -436,7 +436,7 @@
     "t2_time": 2000,
     "t3_time": 1200,
     "Question": "Rachel prepared a Christmas pudding.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D21",
     data: {item: 'D21', condition: 'distracter'}
   },
@@ -457,7 +457,7 @@
     "t2_time": 1200,
     "t3_time": 800,
     "Question": "Ross bought himself a parrot.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "D22",
     data: {item: 'D22', condition: 'distracter'}
   },
@@ -478,7 +478,7 @@
     "t2_time": 1200,
     "t3_time": 2400,
     "Question": "Ross chose Rachel over Julie.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "D23",
     data: {item: 'D23', condition: 'distracter'}
   },
@@ -499,7 +499,7 @@
     "t2_time": 1200,
     "t3_time": 800,
     "Question": "Ross's date didn't like his fake tan.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "D24",
     data: {item: 'D24', condition: 'distracter'}
   },
@@ -520,7 +520,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "Allen thinks the professor is stupid.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP1",
     data: {item: 'EXP1', condition: 'literal praise'}
   },
@@ -541,7 +541,7 @@
     "t2_time": 800,
     "t3_time": 800,
     "Question": "Alice thinks her math grade is great.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP2",
     data: {item: 'EXP2', condition: 'ironic praise'}
   },
@@ -562,7 +562,7 @@
     "t2_time": 800,
     "t3_time": 800,
     "Question": "Alicia thinks the living conditions are good.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP3",
     data: {item: 'EXP3', condition: 'ironic praise'}
   },
@@ -583,7 +583,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "Audrey thinks the cruise ship is horrible.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP4",
     data: {item: 'EXP4', condition: 'literal criticism'}
   },
@@ -604,7 +604,7 @@
     "t2_time": 1200,
     "t3_time": 800,
     "Question": "Beth thinks she will have a bad weekend.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP5",
     data: {item: 'EXP5', condition: 'literal praise'}
   },
@@ -625,7 +625,7 @@
     "t2_time": 1200,
     "t3_time": 2000,
     "Question": "Bill thinks that his brother is exhausted.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP6",
     data: {item: 'EXP6', condition: 'literal criticism'}
   },
@@ -646,7 +646,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "Bob's co-worker thinks that they will be on time for the meeting.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP7",
     data: {item: 'EXP7', condition: 'literal criticism'}
   },
@@ -667,7 +667,7 @@
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "Cathy thinks the apartment is great.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP8",
     data: {item: 'EXP8', condition: 'ironic criticism'}
   },
@@ -688,7 +688,7 @@
     "t2_time": 800,
     "t3_time": 800,
     "Question": "Charlie thinks his friend arrived on time.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP9",
     data: {item: 'EXP9', condition: 'literal praise'}
   },
@@ -709,7 +709,7 @@
     "t2_time": 800,
     "t3_time": 1600,
     "Question": "Corrine thinks the movie was entertaining.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP10",
     data: {item: 'EXP10', condition: 'ironic praise'}
   },
@@ -730,7 +730,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "Frank thinks his cousin's story about the mall is interesting.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP11",
     data: {item: 'EXP11', condition: 'ironic criticism'}
   },
@@ -751,7 +751,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "Gail's friend thinks the lecture was exciting.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP12",
     data: {item: 'EXP12', condition: 'literal criticism'}
   },
@@ -772,7 +772,7 @@
     "t2_time": 2000,
     "t3_time": 800,
     "Question": "Heidi's boss thinks he won't enjoy his weekend.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP13",
     data: {item: 'EXP13', condition: 'literal praise'}
   },
@@ -793,7 +793,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "Jen thinks the students are enthusiastic.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP14",
     data: {item: 'EXP14', condition: 'literal praise'}
   },
@@ -814,7 +814,7 @@
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "James' roommate thinks James is learning chemistry slowly.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP15",
     data: {item: 'EXP15', condition: 'ironic criticism'}
   },
@@ -835,7 +835,7 @@
     "t2_time": 800,
     "t3_time": 800,
     "Question": "His friend thinks that James did well on the test.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP16",
     data: {item: 'EXP16', condition: 'literal criticism'}
   },
@@ -856,7 +856,7 @@
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "Jane thinks going to the reunion was a mistake.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP17",
     data: {item: 'EXP17', condition: 'ironic criticism'}
   },
@@ -877,7 +877,7 @@
     "t2_time": 1200,
     "t3_time": 800,
     "Question": "Jeanne thinks the mall is busy with holiday shoppers.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP18",
     data: {item: 'EXP18', condition: 'ironic praise'}
   },
@@ -898,7 +898,7 @@
     "t2_time": 1200,
     "t3_time": 800,
     "Question": "Jennifer's friend thinks that Jennifer eats unhealthy foods.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP19",
     data: {item: 'EXP19', condition: 'literal criticism'}
   },
@@ -919,7 +919,7 @@
     "t2_time": 400,
     "t3_time": 1600,
     "Question": "Jerome's friend thinks that the women are not attracted to the singer.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP20",
     data: {item: 'EXP20', condition: 'literal criticism'}
   },
@@ -940,7 +940,7 @@
     "t2_time": 800,
     "t3_time": 800,
     "Question": "Joanne's roommate thinks that Joanne looks bad in her new dress.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP21",
     data: {item: 'EXP21', condition: 'literal praise'}
   },
@@ -961,7 +961,7 @@
     "t2_time": 1200,
     "t3_time": 1600,
     "Question": "Joe's friend thinks Joe is poorly prepared for the interview.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP22",
     data: {item: 'EXP22', condition: 'ironic criticism'}
   },
@@ -982,7 +982,7 @@
     "t2_time": 800,
     "t3_time": 800,
     "Question": "Joel thinks the neighborhood is safe.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP23",
     data: {item: 'EXP23', condition: 'ironic praise'}
   },
@@ -1003,7 +1003,7 @@
     "t2_time": 800,
     "t3_time": 800,
     "Question": "Joseph's mother thinks that he is good at keeping secrets.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP24",
     data: {item: 'EXP24', condition: 'literal praise'}
   },
@@ -1024,7 +1024,7 @@
     "t2_time": 400,
     "t3_time": 1200,
     "Question": "Julie thinks that her boyfriend is a good skier.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP25",
     data: {item: 'EXP25', condition: 'literal criticism'}
   },
@@ -1045,7 +1045,7 @@
     "t2_time": 800,
     "t3_time": 800,
     "Question": "June thinks she is a bad photographer",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP26",
     data: {item: 'EXP26', condition: 'literal criticism'}
   },
@@ -1066,7 +1066,7 @@
     "t2_time": 400,
     "t3_time": 1200,
     "Question": "Kelly's classmate thinks Kelly's instruction was worthwhile.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP27",
     data: {item: 'EXP27', condition: 'ironic criticism'}
   },
@@ -1087,7 +1087,7 @@
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "Ken thinks that the temp work is dull.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP28",
     data: {item: 'EXP28', condition: 'literal criticism'}
   },
@@ -1108,7 +1108,7 @@
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "Kevin thinks the jokes are dull.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP29",
     data: {item: 'EXP29', condition: 'literal praise'}
   },
@@ -1129,7 +1129,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "The mechanic thinks Marcie made a good purchase.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP30",
     data: {item: 'EXP30', condition: 'literal praise'}
   },
@@ -1150,7 +1150,7 @@
     "t2_time": 2000,
     "t3_time": 800,
     "Question": "Marco's friend thinks the lecture was helpful.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP31",
     data: {item: 'EXP31', condition: 'ironic praise'}
   },
@@ -1171,7 +1171,7 @@
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "Maryellen thinks the camping facilities are good.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP32",
     data: {item: 'EXP32', condition: 'ironic praise'}
   },
@@ -1192,7 +1192,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "Matt thinks his jokes were boring.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP33",
     data: {item: 'EXP33', condition: 'literal praise'}
   },
@@ -1213,7 +1213,7 @@
     "t2_time": 1200,
     "t3_time": 1600,
     "Question": "Mike thinks the drawing is good for a three-year-old.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP34",
     data: {item: 'EXP34', condition: 'ironic criticism'}
   },
@@ -1234,7 +1234,7 @@
     "t2_time": 800,
     "t3_time": 2000,
     "Question": "Patty thinks the politician is a talented public speaker.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP35",
     data: {item: 'EXP35', condition: 'ironic criticism'}
   },
@@ -1255,7 +1255,7 @@
     "t2_time": 800,
     "t3_time": 2000,
     "Question": "Peter thinks that the road is crowded.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP36",
     data: {item: 'EXP36', condition: 'ironic praise'}
   },
@@ -1276,7 +1276,7 @@
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "Rachel thinks gambling is a poor way to make money.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP37",
     data: {item: 'EXP37', condition: 'ironic criticism'}
   },
@@ -1297,7 +1297,7 @@
     "t2_time": 800,
     "t3_time": 800,
     "Question": "Ray thinks the line is long.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP38",
     data: {item: 'EXP38', condition: 'ironic praise'}
   },
@@ -1318,7 +1318,7 @@
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "Sally thinks the weather forecast was inaccurate.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP39",
     data: {item: 'EXP39', condition: 'ironic criticism'}
   },
@@ -1339,7 +1339,7 @@
     "t2_time": 800,
     "t3_time": 800,
     "Question": "Sam's mother thinks that Sam has a great deal of homework to do",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP40",
     data: {item: 'EXP40', condition: 'ironic praise'}
   },
@@ -1360,7 +1360,7 @@
     "t2_time": 800,
     "t3_time": 800,
     "Question": "Sandra's friend thinks that Sandra is thin.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP41",
     data: {item: 'EXP41', condition: 'literal criticism'}
   },
@@ -1381,7 +1381,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "Sarah thinks the evening was tense.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP42",
     data: {item: 'EXP42', condition: 'ironic criticism'}
   },
@@ -1402,7 +1402,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "Steve thinks the exam was difficult.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP43",
     data: {item: 'EXP43', condition: 'ironic praise'}
   },
@@ -1423,7 +1423,7 @@
     "t2_time": 400,
     "t3_time": 1200,
     "Question": "Steven thinks that his friend reads difficult material.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP44",
     data: {item: 'EXP44', condition: 'literal criticism'}
   },
@@ -1444,7 +1444,7 @@
     "t2_time": 1600,
     "t3_time": 1600,
     "Question": "Susan's roommate thinks the dinner party was a success.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP45",
     data: {item: 'EXP45', condition: 'ironic criticism'}
   },
@@ -1465,7 +1465,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "Annette thinks they did a good job.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP46",
     data: {item: 'EXP46', condition: 'literal praise'}
   },
@@ -1486,7 +1486,7 @@
     "t2_time": 800,
     "t3_time": 1200,
     "Question": "Tim's friend thinks the party was boring.",
-    "CorrectResponse": "z",
+    "CorrectResponse": "F",
     "item": "EXP47",
     data: {item: 'EXP47', condition: 'ironic praise'}
   },
@@ -1507,176 +1507,8 @@
     "t2_time": 1600,
     "t3_time": 1200,
     "Question": "Tony thinks that his parents will be impressed with his scores.",
-    "CorrectResponse": "{/}",
+    "CorrectResponse": "T",
     "item": "EXP48",
     data: {item: 'EXP48', condition: 'literal praise'}
-  },
-  {
-    "s1": "Alex went to a restaurant with his girlfriend and ordered an extremely expensive dish called \"A gourmet's dream\" hoping it would be delicious.",
-    "s2": "When the waiter arrived with his order, it turned out that the dish was awfully bland and cold.",
-    "s3": "Alex said to his girlfriend:",
-    "full_context": "Alex went to a restaurant with his girlfriend and ordered an extremely expensive dish called \"A gourmet's dream\" hoping it would be delicious.When the waiter arrived with his order, it turned out that the dish was awfully bland and cold. Alex said to his girlfriend:",
-    "tf_question": "Alex thinks the dish is delicious.",
-    "t1": "A gourmet's dream",
-    "t2": "is an adequate name",
-    "t3": "for this exquisite dish!",
-    "condition": "ironic criticism",
-    "list": "Practice",
-    "tf_question_time": 1800,
-    "edt_question_time": 1500,
-    "t1_time": 1200,
-    "t2_time": 1600,
-    "t3_time": 1600,
-    "Question": "Alex thinks the dish is delicious.",
-    "CorrectResponse": "z",
-    "item": "P1",
-    data: {item: 'P1', condition: 'ironic criticism'}
-  },
-  {
-    "s1": "Christie was going to take an important exam for which she was studying really hard.",
-    "s2": "However, on the day of the exam she overslept and didn't manage to make it to the exam on time.",
-    "s3": "Christie said to her friend:",
-    "full_context": "Christie was going to take an important exam for which she was studying really hard.However, on the day of the exam she overslept and didn't manage to make it to the exam on time. Christie said to her friend:",
-    "tf_question": "Christie thinks it's good that she overslept.",
-    "t1": "I'm absolutely",
-    "t2": "the worst sleepyhead",
-    "t3": "you could imagine!",
-    "condition": "literal criticism",
-    "list": "Practice",
-    "tf_question_time": 1800,
-    "edt_question_time": 1500,
-    "t1_time": 800,
-    "t2_time": 1200,
-    "t3_time": 1200,
-    "Question": "Christie thinks it's good that she overslept.",
-    "CorrectResponse": "z",
-    "item": "P2",
-    data: {item: 'P2', condition: 'literal criticism'}
-  },
-  {
-    "s1": "Eddie has been working really hard upon his M.A.thesis.",
-    "s2": "One day before the submission deadline, his computer broke down and all files were missing, leaving him with no back-up copy.",
-    "s3": "Eddie said to his friend:",
-    "full_context": "Eddie has been working really hard upon his M.A.thesis. One day before the submission deadline, his computer broke down and all files were missing, leaving him with no back-up copy.  Eddie said to his friend:",
-    "tf_question": "Eddie thinks he was stupid not to make a back-up copy of the file.",
-    "t1": "Only clever people like me",
-    "t2": "don't make back-up copies",
-    "t3": "of important files!",
-    "condition": "ironic criticism",
-    "list": "Practice",
-    "tf_question_time": 1800,
-    "edt_question_time": 1500,
-    "t1_time": 2000,
-    "t2_time": 1600,
-    "t3_time": 1200,
-    "Question": "Eddie thinks he was stupid not to make a back-up copy of the file.",
-    "CorrectResponse": "{/}",
-    "item": "P3",
-    data: {item: 'P3', condition: 'ironic criticism'}
-  },
-  {
-    "s1": "Frank has been known for his lack of organisational skills.",
-    "s2": "However, once he was appointed as a project manager and he handled it wonderfully, leading his team to success.",
-    "s3": "His friend said to him:",
-    "full_context": "Frank has been known for his lack of organisational skills.However, once he was appointed as a project manager and he handled it wonderfully, leading his team to success. His friend said to him:",
-    "tf_question": "Frank's friend thinks he handled the project well.",
-    "t1": "You're really",
-    "t2": "the worst",
-    "t3": "project manager ever!",
-    "condition": "ironic praise",
-    "list": "Practice",
-    "tf_question_time": 1800,
-    "edt_question_time": 1500,
-    "t1_time": 800,
-    "t2_time": 800,
-    "t3_time": 1200,
-    "Question": "Frank's friend thinks he handled the project well.",
-    "CorrectResponse": "{/}",
-    "item": "P4",
-    data: {item: 'P4', condition: 'ironic praise'}
-  },
-  {
-    "s1": "Lisa, known for her lack of good taste, recommended a hairdresser to her friend, Susan.",
-    "s2": "Susan expected the hairdresser to be rather untalented, but actually he made her hair look wonderfully.",
-    "s3": "Susan said to Lisa:",
-    "full_context": "Lisa, known for her lack of good taste, recommended a hairdresser to her friend, Susan. Susan expected the hairdresser to be rather untalented, but actually he made her hair look wonderfully. Susan said to Lisa:",
-    "tf_question": "Susan was disappointed with the hairdresser.",
-    "t1": "This hairdresser",
-    "t2": "you recommended",
-    "t3": "is a genius!",
-    "condition": "literal praise",
-    "list": "Practice",
-    "tf_question_time": 1800,
-    "edt_question_time": 1500,
-    "t1_time": 800,
-    "t2_time": 800,
-    "t3_time": 1200,
-    "Question": "Susan was disappointed with the hairdresser.",
-    "CorrectResponse": "z",
-    "item": "P5",
-    data: {item: 'P5', condition: 'literal praise'}
-  },
-  {
-    "s1": "Mike has never been good at maths at school.",
-    "s2": "However, when he took part in the national championships in arithmetics, he won the first place.",
-    "s3": "His teacher told him:",
-    "full_context": "Mike has never been good at maths at school. However, when he took part in the national championships in arithmetics, he won the first place. His teacher told him:",
-    "tf_question": "Mike's teacher thinks he is skilled at maths.",
-    "t1": "I didn't know",
-    "t2": "you were",
-    "t3": "a mathematical genius!",
-    "condition": "literal praise",
-    "list": "Practice",
-    "tf_question_time": 1800,
-    "edt_question_time": 1500,
-    "t1_time": 1200,
-    "t2_time": 800,
-    "t3_time": 1200,
-    "Question": "Mike's teacher thinks he is skilled at maths.",
-    "CorrectResponse": "{/}",
-    "item": "P6",
-    data: {item: 'P6', condition: 'literal praise'}
-  },
-  {
-    "s1": "Rick's friend invited him to a rock concert but Rick didn't want to go saying the band is lousy.",
-    "s2": "Quite unexpectedly, the band gave an amazing performance and Rick enjoyed the concert immensely.",
-    "s3": "After the concert he said to his friend:",
-    "full_context": "Rick's friend invited him to a rock concert but Rick didn't want to go saying the band is lousy.Quite unexpectedly, the band gave an amazing performance and Rick enjoyed the concert immensely.After the concert he said to his friend:",
-    "tf_question": "Rick thinks the concert was poor.",
-    "t1": "See, I told you",
-    "t2": "this band",
-    "t3": "was lousy.",
-    "condition": "ironic praise",
-    "list": "Practice",
-    "tf_question_time": 1800,
-    "edt_question_time": 1500,
-    "t1_time": 1600,
-    "t2_time": 800,
-    "t3_time": 800,
-    "Question": "Rick thinks the concert was poor.",
-    "CorrectResponse": "z",
-    "item": "P7",
-    data: {item: 'P7', condition: 'ironic praise'}
-  },
-  {
-    "s1": "Sheila was going to introduce her new boyfriend to her parents.",
-    "s2": "Before they met she told them that he was an intelligent and cultural man, but when they finally met, her boyfriend just kept telling obscene stories and crude jokes at dinner.",
-    "s3": "Sheila's parents said to her:",
-    "full_context": "Sheila was going to introduce her new boyfriend to her parents. Before they met she told them that he was an intelligent and cultural man, but when they finally met, her boyfriend just kept telling obscene stories and crude jokes at dinner.Sheila's parents said to her:",
-    "tf_question": "Sheila's parents don't like her new boyfriend.",
-    "t1": "Your boyfriend",
-    "t2": "is the most vulgar man",
-    "t3": "we've ever met.",
-    "condition": "literal criticism",
-    "list": "Practice",
-    "tf_question_time": 1800,
-    "edt_question_time": 1500,
-    "t1_time": 800,
-    "t2_time": 2000,
-    "t3_time": 1200,
-    "Question": "Sheila's parents don't like her new boyfriend.",
-    "CorrectResponse": "{/}",
-    "item": "P8",
-    data: {item: 'P8', condition: 'literal criticism'}
   }
 ]

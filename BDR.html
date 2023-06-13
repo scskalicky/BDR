@@ -18,6 +18,7 @@
   <script src="jspsych/plugin-preload.js"></script>
   <script src='lextale_stimuli.js'></script>
   <script src='irony_stimuli.js'></script>
+  <script src='practice_stimuli.js'></script>
   <script src = 'helper_functions1.js'></script>
   <link href = "jspsych/jspsych.css" rel="stylesheet" type = "text/css" />
 
@@ -117,7 +118,22 @@ const age = {
         jsPsych.data.addProperties({age: data.response});
         data.trial_item = 'age_question';
     }
-      };  		
+      };  	
+      
+      
+const handedness = {
+  jsPsychSurveyMultiChoice,
+  questions :[
+    {prompt: 'Which hand is your dominant hand (e.g., the hand you use to write with)',
+  options: ['Left Hand', 'Right Hand'], 
+  required: true, 
+  name: 'handedness'
+}
+  ],
+  on_finish: function(data){
+    jsPsych.data.addProperties({handedness: data.response})
+  }
+}
       
 const sex = {
     type: jsPsychSurveyMultiChoice,
@@ -318,18 +334,16 @@ IRONY TASK
 
 
 /*
-
 Practice session - participants must have 75% accuracy to pass. 
-
-# now that i have the cresp i can do the practice session stuff. 
-
 */
 
-
 const instructions_irony_practice = {
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: '<p class = "instructions"><b>Sentence Reading Task</b><br>In this task, you will read different situations involving two people. Each situation will end with a final sentence, where one of the characters says something. Your job is to determine whether the final sentence in each situation is <i>positive</i> or <i>negative</i>.<br><br>If you think the sentence is <i>positive</i>, press the <b>p</b> key on your keyboard.<br>If you think the sentence is <i>negative</i>, press the <b>n</b> key on your keyboard.<br>There is a time limit for each situation, so you should answer as quickly and accurately as you can.<br><br> Press the SPACEBAR to continue.</p>',
-  choices: [" "]
+  type: jsPsychInstructions,
+  pages: ['<p class = "instructions"><b>Reading Task</b><br>In this task, you will read descriptions of situations involving different people. Each situation will end with a final sentence, where one of the characters says something.',
+  '<p class = "instructions">You will read the situations one sentence at a time, pushing the SPACEBAR to see each new sentence.</p>',
+  '<p class = "instructions">However, the final sentence will be presented to you automatically, one phrase at a time.</p>',
+  '<p class = "instructions">After reading the situation, you will be asked a True/False question about.</p>'],
+  show_clickable_nav: true,
 }
 
 
@@ -349,21 +363,38 @@ const irony_practice_trials = {
     stimulus: 'Press the SPACEBAR to see the next situation.<br><br>',
     choices: [' '],
   },
-
   {
 type: jsPsychHtmlKeyboardResponse,
 prompt: irony_prompt,
 on_start: function(trial){
-  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat( jsPsych.timelineVariable('situation'))
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('s1'))
 },
 stimulus: '',
 data: jsPsych.timelineVariable("data"),
-trial_duration: 18100,
-choices: ['p', 'n']
+choices: ['']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: irony_prompt,
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('s2'))
+},
+stimulus: '',
+data: jsPsych.timelineVariable("data"),
+choices: ['']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: irony_prompt,
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('s3'))
+},
+stimulus: '',
+data: jsPsych.timelineVariable("data"),
+choices: ['']
 }
 
-
-  ], timeline_variables: irony_stim_practice
+  ], timeline_variables: practice_stim
 
 }
 
@@ -374,36 +405,11 @@ const instructions_irony_real = {
   choices: [" "]
 }
 
-const irony_trials = {
-  timeline: [
-  {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus: 'Press the SPACEBAR to see the next situation.<br><br>',
-    choices: [' '],
-  },
 
-  {
-type: jsPsychHtmlKeyboardResponse,
-prompt: irony_prompt,
-on_start: function(trial){
-  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat( jsPsych.timelineVariable('situation'))
-},
-stimulus: '',
-data: jsPsych.timelineVariable("data"),
-trial_duration: 18100, // timeout after 18 seconds + 100ms buffer
-choices: ['p', 'n']
-}
-
-
-  ], timeline_variables: irony_stim, randomize_order: true
-
-}
 
 
 /*
 saveData functions because it seems to not work all the time? 
-
-
 */
 
 const end_experiment = {
@@ -435,16 +441,17 @@ self_ratings_english
 ]
 const lextale_timeline = [lextale_preamble, instructions_lextale, pre_lextale, lextale]
 
-const irony_timeline = [instructions_irony_practice, ready_hands, irony_practice_trials,instructions_irony_real, irony_trials]
+//const irony_timeline = [instructions_irony_practice, ready_hands, irony_practice_trials,instructions_irony_real, irony_trials]
 
 
 // use spread operator (...) to push the arrays
 timeline.push(
+  instructions_irony_practice,
  // browser_check,
  //...introduction,
   //...demographic_timeline,
-  ...irony_timeline,
-  ...lextale_timeline,
+ // ...irony_timeline,
+  //...lextale_timeline,
   end_experiment
 );
  

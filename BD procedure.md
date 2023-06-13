@@ -16,8 +16,26 @@ TF task
 
 
 EDT task
-1. same stimuli and text presentation format as the TF task
+1. same stimuli set and procedure in EDT format as the TF task
 2. instead of TF, they judged whether target sentences communicated praise or criticism, taking into account the *entire* story
 3. participants have 1500ms to make their decision
     - screen showed PRAISING / CRITICAl and chose by using the x (praise) and y (critical) keys
 4. half did experiment 1 list and half did experiment 2 list
+
+
+Ironicity test
+Ironicity test. The goal of the ironicity test was to check if ironic comments were understood as ironic. 
+
+In total, 26 students of the Faculty of English participated in this test (Mage = 23.8; range = 23–26; 29 women, 7 men). They reported that they have been studying English for 13.4 years on average. Each participant responded to 32 experimental stories out of 96 stories. 
+
+One participant saw only one version of each story. 
+
+Participants’ tasks were to rate the ironicity of the target sentences on a 4-point Likert-type scale (where 0 stands for non-ironic, 3 stands for very ironic). 
+
+This scale (1) tested if participants identify all ironic comments as ironic (never choose 0), and (2) measured the perceived ironicity of the ironic comments. 
+
+The results demonstrated that participants recognized all ironic stories as ironic, and all the non-ironic stories as non-ironic, thus indicating that in the off-line condition respondents successfully differentiated between irony and non-irony. 
+
+In addition, this test showed that stories featuring ironic praise were rated significantly lower on the ironicity scale (M = 2.45, SD = 0.348) than stories featuring ironic criticism (M = 2.76, SD = 0.273; t(25) = 3.13, p < .01), indicating that participants found ironic praise to be less ironic than ironic criticism. 
+
+This result supports the predominant view that ironic praise is a less frequent, and also a less prototypical type of irony, and as such may be more effortful to process than ironic criticism.

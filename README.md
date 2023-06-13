@@ -7,3 +7,5 @@
 TODO
 - code irony practice session
 - code irony session
+- get list of stimuli for norming study
+- code a handedness value using QP, so that TRUE is always the dominant hand for participants.

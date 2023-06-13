@@ -1,4 +1,8 @@
-lextale_words = [
+
+
+var jsPsych = initJsPsych();
+
+var lextale_words = [
 {word: '<p style = "font-size: 38px; font-family: Georgia"><i>platery</i><br><br></p>', data: {type: 'nw', lx_trial: '0', cresp: 'no'}},
 {word: '<p style = "font-size: 38px; font-family: Georgia"><i>denial</i><br><br></p>', data: {type: 'w', lx_trial: '0', cresp: 'yes'}},
 {word: '<p style = "font-size: 38px; font-family: Georgia"><i>generic</i><br><br></p>', data: {type: 'w', lx_trial: '0', cresp: 'yes'}},
