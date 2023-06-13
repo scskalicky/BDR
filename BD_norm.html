@@ -90,6 +90,12 @@ const information_sheet = {
 			data.trial_item = 'consent';}
 	};
 
+var enter_fullscreen = {
+  type: jsPsychFullscreen,
+  fullscreen_mode: true,
+  message: '<p class = "instructions" style = "font-size: 30px; color: red"><b>ATTENTION PLEASE!</b></p><p class = "instructions">We ask that you provide your fullest attention during the experiment. Please turn off your phone as well as any music, television, or other potential distractions around you. <br><br> Your browser will now switch to full screen mode. Please leave your browser in full screen for the duration of the test.</p><br>'
+};
+
 const norming_instructions01 = {
     on_start: function(){
         // stupid function to pick the stimuli lists. 
@@ -105,7 +111,7 @@ const norming_instructions01 = {
 
     },
   type: jsPsychHtmlButtonResponse,
-    stimulus: '<p class = "instructions">Thank you for participating in this study!</p><p class = "instructions" style = "font-size: 30px; color: red"><b>STOP!</b></p><p class = "instructions">You should set aside about 30 minutes to complete this experiment. This experiment should be completed in one go - you cannot save your data and return later. In this experiment, you will complete three tasks: a demographic survey, a sentence ratings activity, and a word recognition activity.<br><br>During the experiment, please <b><span style = "color:red;">do not</b><span> refresh your browser or use the back button. Doing so will result in a loss of all your data, and you will be unable to continue.<br><br>Finally, please be sure to take this test on a computer in a quiet room. Do not use a mobile device such as a phone or tablet.</p><br>',
+    stimulus: '<p class = "instructions">Thank you for participating in this study!</p><p class = "instructions" style = "font-size: 30px; color: red"><b>STOP!</b></p><p class = "instructions">You should set aside about 30-45 minutes to complete this experiment. This experiment should be completed in one go - you cannot save your data and return later. In this experiment, you will complete three tasks: a demographic survey, a sentence ratings activity, and a word recognition activity.<br><br>During the experiment, please <b><span style = "color:red;">do not</b><span> refresh your browser or use the back button. Doing so will result in a loss of all your data, and you will be unable to continue.<br><br>Finally, please be sure to take this test on a computer in a quiet room. Do not use a mobile device such as a phone or tablet.</p><br>',
     choices: ['I Understand']
 }
 
@@ -185,6 +191,7 @@ timeline.push(
     browser_check,
     information_sheet, 
     consent,
+    enter_fullscreen,
     norming_instructions01,
     ...demographic_timeline,
    

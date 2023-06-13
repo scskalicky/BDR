@@ -44,19 +44,7 @@ const age = {
       };  	
       
       
-const handedness = {
-  jsPsychSurveyMultiChoice,
-  questions :[
-    {prompt: 'Which hand is your dominant hand (e.g., the hand you use to write with)',
-  options: ['Left Hand', 'Right Hand'], 
-  required: true, 
-  name: 'handedness'
-}
-  ],
-  on_finish: function(data){
-    jsPsych.data.addProperties({handedness: data.response})
-  }
-}
+
       
 const sex = {
     type: jsPsychSurveyMultiChoice,

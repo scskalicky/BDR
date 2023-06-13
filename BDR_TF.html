@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>BDR_TF</title>
+  <script type = "text/javascript" src="jquery-3.6.0.js"></script>
+  <script src = "jspsych/jspsych.js"></script>
+  <script src = 'jspsych/plugin-fullscreen.js'></script>
+  <script src = "jspsych/plugin-html-keyboard-response.js"></script>
+  <script src = "jspsych/plugin-html-button-response.js"></script>
+  <script src = "jspsych/plugin-instructions.js"></script>
+  <script src = "jspsych/plugin-survey-text.js"></script>
+  <script src = "jspsych/plugin-survey-likert.js"></script>
+  <script src = "jspsych/plugin-survey-html-form.js"></script>
+  <script src = "jspsych/plugin-survey-multi-choice.js"></script>
+  <script src = "jspsych/plugin-browser-check3.js"></script>
+  <script src = "jspsych/plugin-survey.js"></script>
+  <script src = "jspsych/plugin-cloze19.js"></script>
+  <script src="jspsych/plugin-preload.js"></script>
+  <script src='lextale.js'></script>
+  <script src='listA_stimuli_ND.js'></script>
+  <script src='listB_stimuli_ND.js'></script>
+  <script src='demographic_survey.js'></script>
+  <script src='practice_stimuli.js'></script>
+  <script src = 'helper_functions1.js'></script>
+  <script src = 'info_sheet.js'></script>
+  <link href = "jspsych/jspsych.css" rel="stylesheet" type = "text/css" />
+
+  </head>
+  <body></body>  
+  <script>
+  const jsPsych = initJsPsych({
+    show_progress_bar: true,
+    message_progress_bar: '<span style = "color:red";><b>DO NOT REFRESH YOUR BROWSER OR HIT BACK!<span></b>',
+    on_finish: function(data){
+      // calculate lextale and append to data.
+      var lextale_score = ((rw_score / 40*100) + (nw_score / 20 * 100))  / 2;
+		  jsPsych.data.addProperties({lextale_score: lextale_score});
+
+      // forward to thank you message.
+      window.location = 'https://figuratively-speaking.com/BDR/thankyou.html'
+    },
+  });
+  </script>
+</html>
+
+<script>
+
+// init timeline
+var timeline = [];
+
+const browser_check = {
+  type: jsPsychBrowserCheck,
+  // returns whether the mobile is equal to false
+  inclusion_function: (data) => {
+    return data.mobile === false
+  },
+  // i changed the plugin itself--dangerous!
+  // i don't think this will even fire now but this is a required argument for this trial type. 
+  exclusion_message: (data) => {
+    if(data.mobile){
+      return '<p>You must use a desktop/laptop computer to participate in this experiment.</p>';
+    }
+  }
+};
+
+
+/* 
+#########################
+SET UP - INFO SHEET, CONSENT, INSTRUCTIONS
+#########################
+*/
+
+
+const information_sheet = {
+		type: jsPsychHtmlButtonResponse,
+		stimulus: info_sheet,
+		prompt: '<br><br>',
+		choices: ['Continue'],
+		required: true,
+		on_finish: function(data){
+			data.trial_item = 'info_sheet';}
+	};
+
+	const consent = {
+		type: jsPsychHtmlButtonResponse,
+		stimulus: consent_sheet,
+		choices: ["I AGREE"],
+		prompt: '<br><br>',
+		required: true,
+		on_finish: function(data){
+			data.trial_item = 'consent';
+      jsPsych.data.addProperties({BRD_version: 'true_false_task'});
+      console.log(jsPsych.data.get())
+    }
+	};
+
+const instructions_general = {
+  type: jsPsychHtmlButtonResponse,
+    stimulus: '<p class = "instructions">Thank you for participating in this study!</p><p class = "instructions" style = "font-size: 30px; color: red"><b>STOP!</b></p><p class = "instructions">You should set aside at least 30-45 minutes to complete this experiment. This experiment should be completed in one go - you cannot save your data and return later. In this experiment, you will complete three tasks: a demographic survey, a sentence reading activity, and a word recognition activity.<br><br>During the test, please <b><span style = "color:red;">do not</b><span> refresh your browser or use the back button. Doing so will result in a loss of all your data, and you will be unable to continue.<br><br>Finally, please be sure to take this test on a computer in a quiet room. Do not use a mobile device such as a phone or tablet.</p><br>',
+    choices: ['I Understand']
+}
+
+
+var enter_fullscreen = {
+  type: jsPsychFullscreen,
+  fullscreen_mode: true,
+  message: '<p class = "instructions" style = "font-size: 30px; color: red"><b>ATTENTION PLEASE!</b></p><p class = "instructions">We ask that you provide your fullest attention during the experiment. Please turn off your phone as well as any music, television, or other potential distractions around you. <br><br> Your browser will now switch to full screen mode. Please leave your browser in full screen for the duration of the test.</p><br>'
+};
+
+
+
+/* 
+#########################
+DYNAMIC HANDEDNESS
+#########################
+*/
+
+// alter the buttons based on participant handedness.
+var handy = null;
+var false_button = 'Q';
+var true_button = 'P';
+
+
+const handedness = {
+  type: jsPsychSurveyMultiChoice,
+  questions: [{prompt: "Are you left-handed or right-handed?<br>", 
+  options: ['Left-Handed', 'Right-Handed'], required: true}],
+  on_finish: function(data){
+    jsPsych.data.addProperties({handedness: data.response})
+    data.trial_item = 'handedness_question';
+    handy = data.response.Q0;
+    // change the buttons if they are left-handed.
+    // TRUE will always be used by the dominant hand. 
+    if(handy == 'Left-Handed'){
+      false_button = 'P';
+      true_button = 'Q';      
+    };
+  }
+};
+
+
+/* 
+#########################
+IRONY TASK
+#########################
+*/
+
+
+/*
+Practice session - participants must have 75% accuracy to pass.
+- need a conditional function to pass them through.
+- also need to adjust handedness
+
+*/
+
+const instructions_irony_practice = {
+  type: jsPsychInstructions,
+  pages: ['<p class = "instructions"><b>Reading Task</b><br>In this task, you will read descriptions of situations involving different people. Each situation will end with a final sentence, where one of the characters says something.',
+  '<p class = "instructions">You will read the situations one sentence at a time, pushing the SPACEBAR to see each new sentence.</p>',
+  '<p class = "instructions">However, the final sentence will be presented to you automatically, one phrase at a time.</p>',
+  '<p class = "instructions">After reading the situation, you will be asked a True/False question about the situation.</p>'],
+  show_clickable_nav: true,
+}
+
+
+const ready_hands = {
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: '<p class = "instructions">Remember, you will press either the "Q" or the "P" key to make your answer.<br><br> Please please one hand ready to push the "Q" key and one hand ready to push the "P" key now. When you are ready, press the SPACEBAR to complete a practice session.</p>',
+  choices: [" "]
+}
+
+// different prompts based on dominant hand. 
+const TF_prompt_rightHand = "<br><br>Q = FALSE / P = TRUE"
+const TF_prompt_leftHand = "<br><br>Q = TRUE / P = FALSE"
+const continue_prompt = '<p style = "font-size:15px">press spacebar to proceed</p>'
+
+const irony_practice_trials = {
+  timeline: [
+  {
+    type: jsPsychHtmlKeyboardResponse,
+    stimulus: 'Press the SPACEBAR to see the next situation.<br><br>',
+    choices: [' '],
+  },
+  {
+type: jsPsychHtmlKeyboardResponse,
+prompt: continue_prompt,
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('s1'))
+},
+stimulus: continue_prompt,
+data: jsPsych.timelineVariable("data"),
+choices: [' ']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: continue_prompt,
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('s2'))
+},
+stimulus: '',
+data: jsPsych.timelineVariable("data"),
+choices: [' ']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: continue_prompt,
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('s3'))
+},
+stimulus: '',
+data: jsPsych.timelineVariable("data"),
+choices: [' ']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: '',
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('t1'))
+},
+stimulus: '',
+trial_duration: jsPsych.timelineVariable('t1_time'),
+data: jsPsych.timelineVariable("data"),
+choices: [' ']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: '',
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('t2'))
+},
+stimulus: '',
+trial_duration: jsPsych.timelineVariable('t2_time'),
+data: jsPsych.timelineVariable("data"),
+choices: [' ']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: '',
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('t3'))
+},
+stimulus: '',
+trial_duration: jsPsych.timelineVariable('t3_time'),
+data: jsPsych.timelineVariable("data"),
+choices: [' ']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: '',
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('Question'))
+},
+stimulus: '',
+trial_duration: jsPsych.timelineVariable('tf_question_time'),
+data: jsPsych.timelineVariable("data"),
+choices: ['q', 'p']
+},
+
+  ], timeline_variables: practice_stim
+
+}
+
+
+const instructions_irony_real = {
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: '<p class = "instructions">You have completed the practice task. You are now ready to begin the sentence reading task. You will provide answers for a total of <b>20</b> situations. Press the SPACEBAR to begin.</p>',
+  choices: [" "]
+}
+
+
+/*
+saveData function, because it seems to not work all the time? Multiple async calls seems to be fucky.
+*/
+
+const end_experiment = {
+  type: jsPsychHtmlButtonResponse,
+  stimulus: '<p class = "instructions">You have completed the experiment, thank you. Please press Continue to end the experiment</p>',
+  on_start: function(){
+    // save data
+    saveDataTF(jsPsych.data.get().select('subject').values[0],jsPsych.data.get().select('email').values[0],jsPsych.data.get().csv());
+  },
+  choices: ["Continue"]
+}
+
+
+// define the timeline order
+
+const introduction = [instructions_general, enter_fullscreen]
+
+const demographic_timeline = [instructions_demo, 
+name, 
+age, 
+sex,
+handedness, // comes from this script, not demographic_survey.js
+education_level, 
+country_background, 
+language_background, 
+english_outside_classroom, 
+years_learning_english, 
+english_activities, 
+self_ratings_english
+]
+const lextale_timeline = [lextale_preamble, instructions_lextale, pre_lextale, lextale]
+
+//const irony_timeline = [instructions_irony_practice, ready_hands, irony_practice_trials,instructions_irony_real, irony_trials]
+
+
+// use spread operator (...) to push the arrays
+timeline.push(
+  irony_practice_trials,
+  consent,
+  browser_check,
+ ...introduction,
+  ...demographic_timeline,
+ // ...irony_timeline,
+  //...lextale_timeline,
+  instructions_irony_practice,
+
+  end_experiment
+);
+ 
+jsPsych.run(timeline);
+
+</script>
