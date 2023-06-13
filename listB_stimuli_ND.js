@@ -18,7 +18,7 @@ var stimuli_b_ND = [
     "Question": "Allen thinks the professor is stupid.",
     "CorrectResponse": "F",
     "item": "EXP1",
-    data: {item: 'EXP1', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP1', condition: 'literal praise'}
   },
   {
     "s1": "Alice told her roommate how afraid she was of taking a required calculus class, because she was sure she would fail.",
@@ -39,7 +39,7 @@ var stimuli_b_ND = [
     "Question": "Alice thinks her math grade is great.",
     "CorrectResponse": "T",
     "item": "EXP2",
-    data: {item: 'EXP2', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP2', condition: 'ironic praise'}
   },
   {
     "s1": "Alicia and her co-worker were social workers who were sent out to visit a family they were told lived in abject poverty.",
@@ -60,7 +60,7 @@ var stimuli_b_ND = [
     "Question": "Alicia thinks the living conditions are good.",
     "CorrectResponse": "T",
     "item": "EXP3",
-    data: {item: 'EXP3', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP3', condition: 'ironic praise'}
   },
   {
     "s1": "Audrey and her husband went on a discount cruise in the Caribbean and they expected very little because the trip was so cheap.",
@@ -81,7 +81,7 @@ var stimuli_b_ND = [
     "Question": "Audrey thinks the cruise ship is horrible.",
     "CorrectResponse": "T",
     "item": "EXP4",
-    data: {item: 'EXP4', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP4', condition: 'literal criticism'}
   },
   {
     "s1": "Beth was looking forward to a fun weekend.",
@@ -102,7 +102,7 @@ var stimuli_b_ND = [
     "Question": "Beth thinks she will have a bad weekend.",
     "CorrectResponse": "F",
     "item": "EXP5",
-    data: {item: 'EXP5', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP5', condition: 'literal praise'}
   },
   {
     "s1": "Bill's brother said he had too little energy to help Bill paint his den.",
@@ -123,7 +123,7 @@ var stimuli_b_ND = [
     "Question": "Bill thinks that his brother is exhausted.",
     "CorrectResponse": "T",
     "item": "EXP6",
-    data: {item: 'EXP6', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP6', condition: 'literal criticism'}
   },
   {
     "s1": "Bob and a co-worker had to fly to Chicago for an important meeting.The plane was scheduled to land at 5 p.m., just in time to make the meeting.",
@@ -144,7 +144,7 @@ var stimuli_b_ND = [
     "Question": "Bob's co-worker thinks that they will be on time for the meeting.",
     "CorrectResponse": "F",
     "item": "EXP7",
-    data: {item: 'EXP7', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP7', condition: 'literal criticism'}
   },
   {
     "s1": "Cathy was looking for a clean and quiet apartment and the rental agent told her he had found her the perfect apartment.",
@@ -165,7 +165,7 @@ var stimuli_b_ND = [
     "Question": "Cathy thinks the apartment is great.",
     "CorrectResponse": "F",
     "item": "EXP8",
-    data: {item: 'EXP8', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP8', condition: 'ironic criticism'}
   },
   {
     "s1": "Charlie's friend asked Charlie to meet him for dinner to discuss something important and said that he would be sure to be there at seven sharp.",
@@ -186,7 +186,7 @@ var stimuli_b_ND = [
     "Question": "Charlie thinks his friend arrived on time.",
     "CorrectResponse": "T",
     "item": "EXP9",
-    data: {item: 'EXP9', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP9', condition: 'literal praise'}
   },
   {
     "s1": "Corrine and a friend went to a new movie even though it had been reviewed as the year's worst picture.",
@@ -207,7 +207,7 @@ var stimuli_b_ND = [
     "Question": "Corrine thinks the movie was entertaining.",
     "CorrectResponse": "T",
     "item": "EXP10",
-    data: {item: 'EXP10', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP10', condition: 'ironic praise'}
   },
   {
     "s1": "Frank's cousin considered himself to be very entertaining.",
@@ -228,7 +228,7 @@ var stimuli_b_ND = [
     "Question": "Frank thinks his cousin's story about the mall is interesting.",
     "CorrectResponse": "F",
     "item": "EXP11",
-    data: {item: 'EXP11', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP11', condition: 'ironic criticism'}
   },
   {
     "s1": "Gail's friend asked her to come with her to a lecture on global warming and she went, even though she said she thought it would be of no interest.",
@@ -249,7 +249,7 @@ var stimuli_b_ND = [
     "Question": "Gail's friend thinks the lecture was exciting.",
     "CorrectResponse": "F",
     "item": "EXP12",
-    data: {item: 'EXP12', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP12', condition: 'literal criticism'}
   },
   {
     "s1": "Heidi's boss was looking forward to his weekend getaway.",
@@ -270,7 +270,7 @@ var stimuli_b_ND = [
     "Question": "Heidi's boss thinks he won't enjoy his weekend.",
     "CorrectResponse": "F",
     "item": "EXP13",
-    data: {item: 'EXP13', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP13', condition: 'literal praise'}
   },
   {
     "s1": "It was Jen's first day at her new teaching job and she heard that the students were excited and interested.",
@@ -291,7 +291,7 @@ var stimuli_b_ND = [
     "Question": "Jen thinks the students are enthusiastic.",
     "CorrectResponse": "T",
     "item": "EXP14",
-    data: {item: 'EXP14', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP14', condition: 'literal praise'}
   },
   {
     "s1": "James asked his roommate for help in chemistry.",
@@ -312,7 +312,7 @@ var stimuli_b_ND = [
     "Question": "James' roommate thinks James is learning chemistry slowly.",
     "CorrectResponse": "T",
     "item": "EXP15",
-    data: {item: 'EXP15', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP15', condition: 'ironic criticism'}
   },
   {
     "s1": "James told his friend he was sure he would fail his first physics exam.",
@@ -333,7 +333,7 @@ var stimuli_b_ND = [
     "Question": "His friend thinks that James did well on the test.",
     "CorrectResponse": "F",
     "item": "EXP16",
-    data: {item: 'EXP16', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP16', condition: 'literal criticism'}
   },
   {
     "s1": "Jane was at her college reunion, where she ran into many old acquaintances.",
@@ -354,7 +354,7 @@ var stimuli_b_ND = [
     "Question": "Jane thinks going to the reunion was a mistake.",
     "CorrectResponse": "T",
     "item": "EXP17",
-    data: {item: 'EXP17', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP17', condition: 'ironic criticism'}
   },
   {
     "s1": "Jeanne had postponed her holiday shopping until two days before Christmas.",
@@ -375,7 +375,7 @@ var stimuli_b_ND = [
     "Question": "Jeanne thinks the mall is busy with holiday shoppers.",
     "CorrectResponse": "F",
     "item": "EXP18",
-    data: {item: 'EXP18', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP18', condition: 'ironic praise'}
   },
   {
     "s1": "Jennifer said she loved greasy, fattening food.",
@@ -396,7 +396,7 @@ var stimuli_b_ND = [
     "Question": "Jennifer's friend thinks that Jennifer eats unhealthy foods.",
     "CorrectResponse": "T",
     "item": "EXP19",
-    data: {item: 'EXP19', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP19', condition: 'literal criticism'}
   },
   {
     "s1": "Jerome and a friend were at a rock concert.",
@@ -417,7 +417,7 @@ var stimuli_b_ND = [
     "Question": "Jerome's friend thinks that the women are not attracted to the singer.",
     "CorrectResponse": "T",
     "item": "EXP20",
-    data: {item: 'EXP20', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP20', condition: 'literal criticism'}
   },
   {
     "s1": "Joanne always bragged about her looks.",
@@ -438,7 +438,7 @@ var stimuli_b_ND = [
     "Question": "Joanne's roommate thinks that Joanne looks bad in her new dress.",
     "CorrectResponse": "F",
     "item": "EXP21",
-    data: {item: 'EXP21', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP21', condition: 'literal praise'}
   },
   {
     "s1": "Joe had a job interview and his friend told him to be well prepared.",
@@ -459,7 +459,7 @@ var stimuli_b_ND = [
     "Question": "Joe's friend thinks Joe is poorly prepared for the interview.",
     "CorrectResponse": "T",
     "item": "EXP22",
-    data: {item: 'EXP22', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP22', condition: 'ironic criticism'}
   },
   {
     "s1": "Joel and his friend had to go to a bad part of town known for a high crime rate.",
@@ -480,7 +480,7 @@ var stimuli_b_ND = [
     "Question": "Joel thinks the neighborhood is safe.",
     "CorrectResponse": "T",
     "item": "EXP23",
-    data: {item: 'EXP23', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP23', condition: 'ironic praise'}
   },
   {
     "s1": "Joseph said he wouldn't let on about the surprise birthday party on Friday evening for his sister.",
@@ -501,7 +501,7 @@ var stimuli_b_ND = [
     "Question": "Joseph's mother thinks that he is good at keeping secrets.",
     "CorrectResponse": "T",
     "item": "EXP24",
-    data: {item: 'EXP24', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP24', condition: 'literal praise'}
   },
   {
     "s1": "Julie took her boyfriend skiing.He had never been on skis, and he said he was afraid he would look like an oaf.",
@@ -522,7 +522,7 @@ var stimuli_b_ND = [
     "Question": "Julie thinks that her boyfriend is a good skier.",
     "CorrectResponse": "F",
     "item": "EXP25",
-    data: {item: 'EXP25', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP25', condition: 'literal criticism'}
   },
   {
     "s1": "June took her first roll of film.",
@@ -543,7 +543,7 @@ var stimuli_b_ND = [
     "Question": "June thinks she is a bad photographer",
     "CorrectResponse": "T",
     "item": "EXP26",
-    data: {item: 'EXP26', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP26', condition: 'literal criticism'}
   },
   {
     "s1": "Kelly's classmate asked him to explain the calculus assignment to him.",
@@ -564,7 +564,7 @@ var stimuli_b_ND = [
     "Question": "Kelly's classmate thinks Kelly's instruction was worthwhile.",
     "CorrectResponse": "F",
     "item": "EXP27",
-    data: {item: 'EXP27', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP27', condition: 'ironic criticism'}
   },
   {
     "s1": "Ken reluctantly took an office job as a temp because he really needed money.",
@@ -585,7 +585,7 @@ var stimuli_b_ND = [
     "Question": "Ken thinks that the temp work is dull.",
     "CorrectResponse": "T",
     "item": "EXP28",
-    data: {item: 'EXP28', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP28', condition: 'literal criticism'}
   },
   {
     "s1": "Kevin heard that his new roommate was a real stand-up comedian.",
@@ -606,7 +606,7 @@ var stimuli_b_ND = [
     "Question": "Kevin thinks the jokes are dull.",
     "CorrectResponse": "F",
     "item": "EXP29",
-    data: {item: 'EXP29', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP29', condition: 'literal praise'}
   },
   {
     "s1": "Marcie bought a used car for a very low price.",
@@ -627,7 +627,7 @@ var stimuli_b_ND = [
     "Question": "The mechanic thinks Marcie made a good purchase.",
     "CorrectResponse": "T",
     "item": "EXP30",
-    data: {item: 'EXP30', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP30', condition: 'literal praise'}
   },
   {
     "s1": "Marco wanted to attend a lecture about job hunting, but his friend resisted, saying that the talk would be of no help at all.",
@@ -648,7 +648,7 @@ var stimuli_b_ND = [
     "Question": "Marco's friend thinks the lecture was helpful.",
     "CorrectResponse": "T",
     "item": "EXP31",
-    data: {item: 'EXP31', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP31', condition: 'ironic praise'}
   },
   {
     "s1": "Maryellen expected to rough it when she went camping on a remote island off the coast of Maine.",
@@ -669,7 +669,7 @@ var stimuli_b_ND = [
     "Question": "Maryellen thinks the camping facilities are good.",
     "CorrectResponse": "T",
     "item": "EXP32",
-    data: {item: 'EXP32', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP32', condition: 'ironic praise'}
   },
   {
     "s1": "Matt was doing his comedy act at a nightclub's amateur night",
@@ -690,7 +690,7 @@ var stimuli_b_ND = [
     "Question": "Matt thinks his jokes were boring.",
     "CorrectResponse": "F",
     "item": "EXP33",
-    data: {item: 'EXP33', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP33', condition: 'literal praise'}
   },
   {
     "s1": "Mike and his friend were watching an interview with a famous artist who  said that his son had exceptional talent in drawing.",
@@ -711,7 +711,7 @@ var stimuli_b_ND = [
     "Question": "Mike thinks the drawing is good for a three-year-old.",
     "CorrectResponse": "F",
     "item": "EXP34",
-    data: {item: 'EXP34', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP34', condition: 'ironic criticism'}
   },
   {
     "s1": "Patty was watching a political debate and one of the candidates said he would take on anyone who cared to argue with him.",
@@ -732,7 +732,7 @@ var stimuli_b_ND = [
     "Question": "Patty thinks the politician is a talented public speaker.",
     "CorrectResponse": "F",
     "item": "EXP35",
-    data: {item: 'EXP35', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP35', condition: 'ironic criticism'}
   },
   {
     "s1": "Peter got caught in a meeting late Friday afternoon and he was tensely expecting really bad traffic on the highway home.",
@@ -753,7 +753,7 @@ var stimuli_b_ND = [
     "Question": "Peter thinks that the road is crowded.",
     "CorrectResponse": "F",
     "item": "EXP36",
-    data: {item: 'EXP36', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP36', condition: 'ironic praise'}
   },
   {
     "s1": "Rachel and a friend were on a gambling trip and they hoped to win a pile of money.",
@@ -774,7 +774,7 @@ var stimuli_b_ND = [
     "Question": "Rachel thinks gambling is a poor way to make money.",
     "CorrectResponse": "T",
     "item": "EXP37",
-    data: {item: 'EXP37', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP37', condition: 'ironic criticism'}
   },
   {
     "s1": "Ray postponed going to the DMV to get his driver's license because he hated the long lines.",
@@ -795,7 +795,7 @@ var stimuli_b_ND = [
     "Question": "Ray thinks the line is long.",
     "CorrectResponse": "F",
     "item": "EXP38",
-    data: {item: 'EXP38', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP38', condition: 'ironic praise'}
   },
   {
     "s1": "Sally and her roommate were having a cook-out.",
@@ -816,7 +816,7 @@ var stimuli_b_ND = [
     "Question": "Sally thinks the weather forecast was inaccurate.",
     "CorrectResponse": "T",
     "item": "EXP39",
-    data: {item: 'EXP39', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP39', condition: 'ironic criticism'}
   },
   {
     "s1": "Sam complained to his mother that he had too much homework, which he said would take him the whole weekend.",
@@ -837,7 +837,7 @@ var stimuli_b_ND = [
     "Question": "Sam's mother thinks that Sam has a great deal of homework to do",
     "CorrectResponse": "F",
     "item": "EXP40",
-    data: {item: 'EXP40', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP40', condition: 'ironic praise'}
   },
   {
     "s1": "Sandra was very weight-conscious.",
@@ -858,7 +858,7 @@ var stimuli_b_ND = [
     "Question": "Sandra's friend thinks that Sandra is thin.",
     "CorrectResponse": "F",
     "item": "EXP41",
-    data: {item: 'EXP41', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP41', condition: 'literal criticism'}
   },
   {
     "s1": "Sarah was looking forward to a pleasant holiday dinner with her entire family.",
@@ -879,7 +879,7 @@ var stimuli_b_ND = [
     "Question": "Sarah thinks the evening was tense.",
     "CorrectResponse": "T",
     "item": "EXP42",
-    data: {item: 'EXP42', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP42', condition: 'ironic criticism'}
   },
   {
     "s1": "Steve's statistics professor had a reputation for giving really difficult exams and refusing to curve the grades.",
@@ -900,7 +900,7 @@ var stimuli_b_ND = [
     "Question": "Steve thinks the exam was difficult.",
     "CorrectResponse": "F",
     "item": "EXP43",
-    data: {item: 'EXP43', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP43', condition: 'ironic praise'}
   },
   {
     "s1": "Steven's friend said he only read trashy novels because he wasn't smart enough to read serious stuff.",
@@ -921,7 +921,7 @@ var stimuli_b_ND = [
     "Question": "Steven thinks that his friend reads difficult material.",
     "CorrectResponse": "F",
     "item": "EXP44",
-    data: {item: 'EXP44', condition: 'literal criticism'}
+    data: {list: "B", item: 'EXP44', condition: 'literal criticism'}
   },
   {
     "s1": "Susan and her roommate were having a party and they thought it would be easy to cook a gourmet meal with a very small budget.",
@@ -942,7 +942,7 @@ var stimuli_b_ND = [
     "Question": "Susan's roommate thinks the dinner party was a success.",
     "CorrectResponse": "F",
     "item": "EXP45",
-    data: {item: 'EXP45', condition: 'ironic criticism'}
+    data: {list: "B", item: 'EXP45', condition: 'ironic criticism'}
   },
   {
     "s1": "The students in Annette's class all had to do a group project.",
@@ -963,7 +963,7 @@ var stimuli_b_ND = [
     "Question": "Annette thinks they did a good job.",
     "CorrectResponse": "T",
     "item": "EXP46",
-    data: {item: 'EXP46', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP46', condition: 'literal praise'}
   },
   {
     "s1": "Tim was bringing a friend to the neighborhood block party and he warned his friend that the party would probably be a deadly bore.",
@@ -984,7 +984,7 @@ var stimuli_b_ND = [
     "Question": "Tim's friend thinks the party was boring.",
     "CorrectResponse": "F",
     "item": "EXP47",
-    data: {item: 'EXP47', condition: 'ironic praise'}
+    data: {list: "B", item: 'EXP47', condition: 'ironic praise'}
   },
   {
     "s1": "Tony was anxiously awaiting his SAT scores and he knew his parents expected him to do well.",
@@ -1005,6 +1005,6 @@ var stimuli_b_ND = [
     "Question": "Tony thinks that his parents will be impressed with his scores.",
     "CorrectResponse": "T",
     "item": "EXP48",
-    data: {item: 'EXP48', condition: 'literal praise'}
+    data: {list: "B", item: 'EXP48', condition: 'literal praise'}
   }
 ]
