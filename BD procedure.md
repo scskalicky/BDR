@@ -39,3 +39,13 @@ The results demonstrated that participants recognized all ironic stories as iron
 In addition, this test showed that stories featuring ironic praise were rated significantly lower on the ironicity scale (M = 2.45, SD = 0.348) than stories featuring ironic criticism (M = 2.76, SD = 0.273; t(25) = 3.13, p < .01), indicating that participants found ironic praise to be less ironic than ironic criticism. 
 
 This result supports the predominant view that ironic praise is a less frequent, and also a less prototypical type of irony, and as such may be more effortful to process than ironic criticism.
+
+
+
+
+THe lists are fucked up, need to redo them. 
+
+
+SAVE THE DISTRACTORS WHICH ARE FIXED. 
+
+AND FIND OUT WTF IS UP WITH THE XPERIMENTAL ONES, BECAUSE WE NEED TO SORT THIS SHIT OUT. 

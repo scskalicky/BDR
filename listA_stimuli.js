@@ -17,8 +17,10 @@ var stimuli_a = [
     "t3_time": 2000,
     "Question": "It was Phoebe who recommended the doctor to Ross.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D1",
-    data: {item: 'D1', condition: 'distracter'}
+    data: {list: "A", item: 'D1', condition: 'distracter'}
   },
   {
     "s1": "Chandler and Joey are with Monica at the beach, where she gets stung by a jellyfish.",
@@ -37,9 +39,11 @@ var stimuli_a = [
     "t2_time": 1200,
     "t3_time": 1200,
     "Question": "Phoebe got stung by a wasp.",
-    "CorrectResponse": "T",
+    "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D2",
-    data: {item: 'D2', condition: 'distracter'}
+    data: {list: "A", item: 'D2', condition: 'distracter'}
   },
   {
     "s1": "Chandler is planning to propose to Monica, but he wants it to be a surprise.",
@@ -59,8 +63,10 @@ var stimuli_a = [
     "t3_time": 2400,
     "Question": "Chandler is a fierce opponent of marriage.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D3",
-    data: {item: 'D3', condition: 'distracter'}
+    data: {list: "A", item: 'D3', condition: 'distracter'}
   },
   {
     "s1": "Joey and Chandler adopt a baby chick and a duck.",
@@ -79,9 +85,11 @@ var stimuli_a = [
     "t2_time": 1200,
     "t3_time": 400,
     "Question": "Janice didn't like the idea of keeping chicks and ducks at home.",
-    "CorrectResponse": "F",
+    "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D4",
-    data: {item: 'D4', condition: 'distracter'}
+    data: {list: "A", item: 'D4', condition: 'distracter'}
   },
   {
     "s1": "Joey gets chosen to play the role of Dr. Drake Ramoray, a neurosurgeon on Days of Our Lives after he sleeps with the casting lady.",
@@ -100,15 +108,17 @@ var stimuli_a = [
     "t2_time": 2000,
     "t3_time": 800,
     "Question": "Joey got picked for the role of Mozart in \"Amadeus\".",
-    "CorrectResponse": "T",
+    "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D5",
-    data: {item: 'D5', condition: 'distracter'}
+    data: {list: "A", item: 'D5', condition: 'distracter'}
   },
   {
     "s1": "Joey gives Chandler an extremely tacky engraved gold bracelet, telling him that this shall be the symbol of their enduring friendship.",
     "s2": "Chandler pretends he likes the bracelet but never wears it which makes Joey suspicious.",
     "s3": "Joey says to Chandler:",
-    "full_context": "Joey gives Chandler an extremely tacky engraved gold bracelet, telling him that this shall be the symbol of their enduring friendship. Chandler pretends he likes the bracelet but never wears it which makes Joey suspicious.Joey says to Chandler:",
+    "full_context": "Joey gives Chandler an extremely tacky engraved gold bracelet, telling him that this shall be the symbol of their enduring friendship. Chandler pretends he likes the bracelet but never wears it which makes Joey suspicious. Joey says to Chandler:",
     "tf_question": "Chandler gave Joey a gold bracelet.",
     "t1": "I can see",
     "t2": "that you're not wearing",
@@ -121,9 +131,11 @@ var stimuli_a = [
     "t2_time": 1600,
     "t3_time": 800,
     "Question": "Chandler gave Joey a gold bracelet.",
-    "CorrectResponse": "F",
+    "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D6",
-    data: {item: 'D6', condition: 'distracter'}
+    data: {list: "A", item: 'D6', condition: 'distracter'}
   },
   {
     "s1": "Joey is dating Ross's work colleague Charlie who is a paleonthologist too.",
@@ -143,8 +155,10 @@ var stimuli_a = [
     "t3_time": 2000,
     "Question": "Charlie is an ophthalmologist.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D7",
-    data: {item: 'D7', condition: 'distracter'}
+    data: {list: "A", item: 'D7', condition: 'distracter'}
   },
   {
     "s1": "Monica and Chandler decide not to host Thanksgiving but Phoebe convinces them to by appealing to Monica's competitive nature.",
@@ -164,8 +178,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Chandler doesn't cook very well.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D8",
-    data: {item: 'D8', condition: 'distracter'}
+    data: {list: "A", item: 'D8', condition: 'distracter'}
   },
   {
     "s1": "Monica cooks a gourmet meal for a restaurateur named Steve, who is looking for a new chef.",
@@ -184,9 +200,11 @@ var stimuli_a = [
     "t2_time": 1200,
     "t3_time": 800,
     "Question": "Monica prepared french fries to impress the famous restaurateur, Steve.",
-    "CorrectResponse": "T",
+    "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D9",
-    data: {item: 'D9', condition: 'distracter'}
+    data: {list: "A", item: 'D9', condition: 'distracter'}
   },
   {
     "s1": "Monica decides to pay an unexpected visit to her boyfriend Chandler in Tulsa, where he had moved recently for his new job.",
@@ -205,9 +223,11 @@ var stimuli_a = [
     "t2_time": 1200,
     "t3_time": 2000,
     "Question": "Monica visited Chandler in his new apartment in Toledo.",
-    "CorrectResponse": "T",
+    "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D10",
-    data: {item: 'D10', condition: 'distracter'}
+    data: {list: "A", item: 'D10', condition: 'distracter'}
   },
   {
     "s1": "Phoebe adopts an orphaned rat family and she invites her new boyfriend David, who is a physicist, to her apartment.",
@@ -226,9 +246,11 @@ var stimuli_a = [
     "t2_time": 1200,
     "t3_time": 800,
     "Question": "Phoebe's boyfriend is a physicist.",
-    "CorrectResponse": "F",
+    "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D11",
-    data: {item: 'D11', condition: 'distracter'}
+    data: {list: "A", item: 'D11', condition: 'distracter'}
   },
   {
     "s1": "Phoebe catches chicken pox just as her old flame Ryan arrives in town on leave from the Navy.",
@@ -248,8 +270,10 @@ var stimuli_a = [
     "t3_time": 1600,
     "Question": "Ryan has never has chicken pox before.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D12",
-    data: {item: 'D12', condition: 'distracter'}
+    data: {list: "A", item: 'D12', condition: 'distracter'}
   },
   {
     "s1": "Phoebe has been a vegetarian for her entire life, but when she gets pregnant with the triplets she feels compelled to finally start eating meat.",
@@ -269,8 +293,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Phoebe is pregnant with triplets.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D13",
-    data: {item: 'D13', condition: 'distracter'}
+    data: {list: "A", item: 'D13', condition: 'distracter'}
   },
   {
     "s1": "Phoebe is discovered by a record producer who wants to make her song \"Smelly Cat\" a video, but who secretly dubs in the voice of a more talented woman.",
@@ -290,8 +316,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Phoebe is the author of a famous song: \"Smelly Feet\".",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D14",
-    data: {item: 'D14', condition: 'distracter'}
+    data: {list: "A", item: 'D14', condition: 'distracter'}
   },
   {
     "s1": "Phoebe is trying to teach Joey some French for his audition for a theatre play.",
@@ -310,9 +338,11 @@ var stimuli_a = [
     "t2_time": 1200,
     "t3_time": 400,
     "Question": "Phoebe is teaching Joey how to speak French.",
-    "CorrectResponse": "F",
+    "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D15",
-    data: {item: 'D15', condition: 'distracter'}
+    data: {list: "A", item: 'D15', condition: 'distracter'}
   },
   {
     "s1": "Rachel and Monica had a neighbour upstairs, Mr Heckles, every conversation  with whom broke out into a row.",
@@ -331,12 +361,14 @@ var stimuli_a = [
     "t2_time": 2000,
     "t3_time": 800,
     "Question": "Mr Heckles was Monica's grandfather.",
-    "CorrectResponse": "T",
+    "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D16",
-    data: {item: 'D16', condition: 'distracter'}
+    data: {list: "A", item: 'D16', condition: 'distracter'}
   },
   {
-    "s1": "Rachel arrives at Central Perk after running away from her wedding to her fianc√© Barry and moves into her high school friend Monica.",
+    "s1": "Rachel arrives at Central Perk after running away from her wedding to her fiance Barry and moves into her high school friend Monica.",
     "s2": "When Ross, who's had a crush on Rachel since high school, sees her at Monica's, he starts trying to rekindle their relationship.",
     "s3": "Ross says to Rachel:",
     "full_context": "Rachel arrives at Central Perk after running away from her wedding to her fianc√© Barry and moves into her high school friend Monica. When Ross, who's had a crush on Rachel since high school, sees her at Monica's, he starts trying to rekindle their relationship.Ross says to Rachel:",
@@ -353,8 +385,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Ross still has feelings for his high school sweetheart Rachel.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D17",
-    data: {item: 'D17', condition: 'distracter'}
+    data: {list: "A", item: 'D17', condition: 'distracter'}
   },
   {
     "s1": "Rachel begins working at Bloomingdale's, an upscale department store chain, and Ross becomes jealous of her colleague, Mark.",
@@ -374,8 +408,10 @@ var stimuli_a = [
     "t3_time": 2400,
     "Question": "Rachel took up a job at Bloomingdale's.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D18",
-    data: {item: 'D18', condition: 'distracter'}
+    data: {list: "A", item: 'D18', condition: 'distracter'}
   },
   {
     "s1": "Rachel is going to move to Paris and Ross, realizing  he loves her, chases after her to the airport.",
@@ -393,10 +429,12 @@ var stimuli_a = [
     "t1_time": 1600,
     "t2_time": 1200,
     "t3_time": 1200,
-    "Question": "Rachel is going to move out ouf New York.",
+    "Question": "Rachel is going to move out of New York.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D19",
-    data: {item: 'D19', condition: 'distracter'}
+    data: {list: "A", item: 'D19', condition: 'distracter'}
   },
   {
     "s1": "Rachel is in labor with Ross's baby and when they are in hospital, Ross's mother gives Ross her engagement ring so that he can propose to Rachel.",
@@ -416,8 +454,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Ross was going to propose to Rachel.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D20",
-    data: {item: 'D20', condition: 'distracter'}
+    data: {list: "A", item: 'D20', condition: 'distracter'}
   },
   {
     "s1": "Rachel is known for her lack of cooking skills, but to  prove her friends wrong, she decided to prepare the most\\ndelicious cake for Thanksgiving.",
@@ -436,12 +476,14 @@ var stimuli_a = [
     "t2_time": 2000,
     "t3_time": 1200,
     "Question": "Rachel prepared a Christmas pudding.",
-    "CorrectResponse": "T",
+    "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D21",
-    data: {item: 'D21', condition: 'distracter'}
+    data: {list: "A", item: 'D21', condition: 'distracter'}
   },
   {
-    "s1": "Ross buys himself a pet monkey called Marcel, but  it turns out that he owns it illegally as he doesn't have a permit.",
+    "s1": "Ross buys himself a pet monkey called Marcel, but it turns out that he owns it illegally as he doesn't have a permit.",
     "s2": "He decides to give Marcel to a film-making company and the monkey becomes a film star in California",
     "s3": "After Marcel is gone, Ross says:",
     "full_context": "Ross buys himself a pet monkey called Marcel, but  it turns out that he owns it illegally as he doesn't have a permit. He decides to give Marcel to a film-making company and the monkey becomes a film star in CaliforniaAfter Marcel is gone, Ross says:",
@@ -458,8 +500,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Ross bought himself a parrot.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "D22",
-    data: {item: 'D22', condition: 'distracter'}
+    data: {list: "A", item: 'D22', condition: 'distracter'}
   },
   {
     "s1": "Ross is compelled to make a choice between his childhood crush Rachel and his current lover Julie.",
@@ -478,9 +522,11 @@ var stimuli_a = [
     "t2_time": 1200,
     "t3_time": 2400,
     "Question": "Ross chose Rachel over Julie.",
-    "CorrectResponse": "F",
+    "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D23",
-    data: {item: 'D23', condition: 'distracter'}
+    data: {list: "A", item: 'D23', condition: 'distracter'}
   },
   {
     "s1": "Ross is preparing for a very important date with his old sweatheart and decides to get a spray-on tan.",
@@ -500,8 +546,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Ross's date didn't like his fake tan.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "D24",
-    data: {item: 'D24', condition: 'distracter'}
+    data: {list: "A", item: 'D24', condition: 'distracter'}
   },
   {
     "s1": "A new professor was hired to teach philosophy, and he was supposed to be really sharp.",
@@ -521,8 +569,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Allen thinks the professor is stupid.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP1",
-    data: {item: 'EXP1', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP1', condition: 'literal praise'}
   },
   {
     "s1": "Alice told her roommate how afraid she was of taking a required calculus class, because she was sure she would fail.",
@@ -542,8 +592,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Alice thinks her math grade is great.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP2",
-    data: {item: 'EXP2', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP2', condition: 'ironic praise'}
   },
   {
     "s1": "Alicia and her co-worker were social workers who were sent out to visit a family they were told lived in abject poverty.",
@@ -563,8 +615,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Alicia thinks the living conditions are good.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP3",
-    data: {item: 'EXP3', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP3', condition: 'ironic praise'}
   },
   {
     "s1": "Audrey and her husband went on a discount cruise in the Caribbean and they expected very little because the trip was so cheap.",
@@ -584,8 +638,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Audrey thinks the cruise ship is horrible.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP4",
-    data: {item: 'EXP4', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP4', condition: 'literal criticism'}
   },
   {
     "s1": "Beth was looking forward to a fun weekend.",
@@ -605,8 +661,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Beth thinks she will have a bad weekend.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP5",
-    data: {item: 'EXP5', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP5', condition: 'literal praise'}
   },
   {
     "s1": "Bill's brother said he had too little energy to help Bill paint his den.",
@@ -626,8 +684,10 @@ var stimuli_a = [
     "t3_time": 2000,
     "Question": "Bill thinks that his brother is exhausted.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP6",
-    data: {item: 'EXP6', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP6', condition: 'literal criticism'}
   },
   {
     "s1": "Bob and a co-worker had to fly to Chicago for an important meeting.The plane was scheduled to land at 5 p.m., just in time to make the meeting.",
@@ -647,8 +707,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Bob's co-worker thinks that they will be on time for the meeting.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP7",
-    data: {item: 'EXP7', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP7', condition: 'literal criticism'}
   },
   {
     "s1": "Cathy was looking for a clean and quiet apartment and the rental agent told her he had found her the perfect apartment.",
@@ -668,8 +730,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Cathy thinks the apartment is great.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP8",
-    data: {item: 'EXP8', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP8', condition: 'ironic criticism'}
   },
   {
     "s1": "Charlie's friend asked Charlie to meet him for dinner to discuss something important and said that he would be sure to be there at seven sharp.",
@@ -689,8 +753,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Charlie thinks his friend arrived on time.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP9",
-    data: {item: 'EXP9', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP9', condition: 'literal praise'}
   },
   {
     "s1": "Corrine and a friend went to a new movie even though it had been reviewed as the year's worst picture.",
@@ -710,8 +776,10 @@ var stimuli_a = [
     "t3_time": 1600,
     "Question": "Corrine thinks the movie was entertaining.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP10",
-    data: {item: 'EXP10', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP10', condition: 'ironic praise'}
   },
   {
     "s1": "Frank's cousin considered himself to be very entertaining.",
@@ -731,8 +799,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Frank thinks his cousin's story about the mall is interesting.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP11",
-    data: {item: 'EXP11', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP11', condition: 'ironic criticism'}
   },
   {
     "s1": "Gail's friend asked her to come with her to a lecture on global warming and she went, even though she said she thought it would be of no interest.",
@@ -752,8 +822,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Gail's friend thinks the lecture was exciting.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP12",
-    data: {item: 'EXP12', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP12', condition: 'literal criticism'}
   },
   {
     "s1": "Heidi's boss was looking forward to his weekend getaway.",
@@ -773,8 +845,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Heidi's boss thinks he won't enjoy his weekend.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP13",
-    data: {item: 'EXP13', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP13', condition: 'literal praise'}
   },
   {
     "s1": "It was Jen's first day at her new teaching job and she heard that the students were excited and interested.",
@@ -794,8 +868,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Jen thinks the students are enthusiastic.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP14",
-    data: {item: 'EXP14', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP14', condition: 'literal praise'}
   },
   {
     "s1": "James asked his roommate for help in chemistry.",
@@ -815,8 +891,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "James' roommate thinks James is learning chemistry slowly.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP15",
-    data: {item: 'EXP15', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP15', condition: 'ironic criticism'}
   },
   {
     "s1": "James told his friend he was sure he would fail his first physics exam.",
@@ -836,8 +914,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "His friend thinks that James did well on the test.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP16",
-    data: {item: 'EXP16', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP16', condition: 'literal criticism'}
   },
   {
     "s1": "Jane was at her college reunion, where she ran into many old acquaintances.",
@@ -857,8 +937,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Jane thinks going to the reunion was a mistake.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP17",
-    data: {item: 'EXP17', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP17', condition: 'ironic criticism'}
   },
   {
     "s1": "Jeanne had postponed her holiday shopping until two days before Christmas.",
@@ -878,8 +960,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Jeanne thinks the mall is busy with holiday shoppers.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP18",
-    data: {item: 'EXP18', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP18', condition: 'ironic praise'}
   },
   {
     "s1": "Jennifer said she loved greasy, fattening food.",
@@ -899,8 +983,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Jennifer's friend thinks that Jennifer eats unhealthy foods.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP19",
-    data: {item: 'EXP19', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP19', condition: 'literal criticism'}
   },
   {
     "s1": "Jerome and a friend were at a rock concert.",
@@ -920,8 +1006,10 @@ var stimuli_a = [
     "t3_time": 1600,
     "Question": "Jerome's friend thinks that the women are not attracted to the singer.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP20",
-    data: {item: 'EXP20', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP20', condition: 'literal criticism'}
   },
   {
     "s1": "Joanne always bragged about her looks.",
@@ -941,8 +1029,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Joanne's roommate thinks that Joanne looks bad in her new dress.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP21",
-    data: {item: 'EXP21', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP21', condition: 'literal praise'}
   },
   {
     "s1": "Joe had a job interview and his friend told him to be well prepared.",
@@ -962,8 +1052,10 @@ var stimuli_a = [
     "t3_time": 1600,
     "Question": "Joe's friend thinks Joe is poorly prepared for the interview.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP22",
-    data: {item: 'EXP22', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP22', condition: 'ironic criticism'}
   },
   {
     "s1": "Joel and his friend had to go to a bad part of town known for a high crime rate.",
@@ -983,8 +1075,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Joel thinks the neighborhood is safe.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP23",
-    data: {item: 'EXP23', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP23', condition: 'ironic praise'}
   },
   {
     "s1": "Joseph said he wouldn't let on about the surprise birthday party on Friday evening for his sister.",
@@ -1004,8 +1098,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Joseph's mother thinks that he is good at keeping secrets.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP24",
-    data: {item: 'EXP24', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP24', condition: 'literal praise'}
   },
   {
     "s1": "Julie took her boyfriend skiing.He had never been on skis, and he said he was afraid he would look like an oaf.",
@@ -1025,8 +1121,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Julie thinks that her boyfriend is a good skier.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP25",
-    data: {item: 'EXP25', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP25', condition: 'literal criticism'}
   },
   {
     "s1": "June took her first roll of film.",
@@ -1046,8 +1144,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "June thinks she is a bad photographer",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP26",
-    data: {item: 'EXP26', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP26', condition: 'literal criticism'}
   },
   {
     "s1": "Kelly's classmate asked him to explain the calculus assignment to him.",
@@ -1067,8 +1167,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Kelly's classmate thinks Kelly's instruction was worthwhile.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP27",
-    data: {item: 'EXP27', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP27', condition: 'ironic criticism'}
   },
   {
     "s1": "Ken reluctantly took an office job as a temp because he really needed money.",
@@ -1088,8 +1190,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Ken thinks that the temp work is dull.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP28",
-    data: {item: 'EXP28', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP28', condition: 'literal criticism'}
   },
   {
     "s1": "Kevin heard that his new roommate was a real stand-up comedian.",
@@ -1109,8 +1213,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Kevin thinks the jokes are dull.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP29",
-    data: {item: 'EXP29', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP29', condition: 'literal praise'}
   },
   {
     "s1": "Marcie bought a used car for a very low price.",
@@ -1130,8 +1236,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "The mechanic thinks Marcie made a good purchase.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP30",
-    data: {item: 'EXP30', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP30', condition: 'literal praise'}
   },
   {
     "s1": "Marco wanted to attend a lecture about job hunting, but his friend resisted, saying that the talk would be of no help at all.",
@@ -1151,8 +1259,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Marco's friend thinks the lecture was helpful.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP31",
-    data: {item: 'EXP31', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP31', condition: 'ironic praise'}
   },
   {
     "s1": "Maryellen expected to rough it when she went camping on a remote island off the coast of Maine.",
@@ -1172,8 +1282,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Maryellen thinks the camping facilities are good.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP32",
-    data: {item: 'EXP32', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP32', condition: 'ironic praise'}
   },
   {
     "s1": "Matt was doing his comedy act at a nightclub's amateur night",
@@ -1193,8 +1305,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Matt thinks his jokes were boring.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP33",
-    data: {item: 'EXP33', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP33', condition: 'literal praise'}
   },
   {
     "s1": "Mike and his friend were watching an interview with a famous artist who  said that his son had exceptional talent in drawing.",
@@ -1214,8 +1328,10 @@ var stimuli_a = [
     "t3_time": 1600,
     "Question": "Mike thinks the drawing is good for a three-year-old.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP34",
-    data: {item: 'EXP34', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP34', condition: 'ironic criticism'}
   },
   {
     "s1": "Patty was watching a political debate and one of the candidates said he would take on anyone who cared to argue with him.",
@@ -1235,8 +1351,10 @@ var stimuli_a = [
     "t3_time": 2000,
     "Question": "Patty thinks the politician is a talented public speaker.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP35",
-    data: {item: 'EXP35', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP35', condition: 'ironic criticism'}
   },
   {
     "s1": "Peter got caught in a meeting late Friday afternoon and he was tensely expecting really bad traffic on the highway home.",
@@ -1256,8 +1374,10 @@ var stimuli_a = [
     "t3_time": 2000,
     "Question": "Peter thinks that the road is crowded.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP36",
-    data: {item: 'EXP36', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP36', condition: 'ironic praise'}
   },
   {
     "s1": "Rachel and a friend were on a gambling trip and they hoped to win a pile of money.",
@@ -1277,8 +1397,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Rachel thinks gambling is a poor way to make money.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP37",
-    data: {item: 'EXP37', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP37', condition: 'ironic criticism'}
   },
   {
     "s1": "Ray postponed going to the DMV to get his driver's license because he hated the long lines.",
@@ -1298,8 +1420,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Ray thinks the line is long.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP38",
-    data: {item: 'EXP38', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP38', condition: 'ironic praise'}
   },
   {
     "s1": "Sally and her roommate were having a cook-out.",
@@ -1319,8 +1443,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Sally thinks the weather forecast was inaccurate.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP39",
-    data: {item: 'EXP39', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP39', condition: 'ironic criticism'}
   },
   {
     "s1": "Sam complained to his mother that he had too much homework, which he said would take him the whole weekend.",
@@ -1340,8 +1466,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Sam's mother thinks that Sam has a great deal of homework to do",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP40",
-    data: {item: 'EXP40', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP40', condition: 'ironic praise'}
   },
   {
     "s1": "Sandra was very weight-conscious.",
@@ -1361,8 +1489,10 @@ var stimuli_a = [
     "t3_time": 800,
     "Question": "Sandra's friend thinks that Sandra is thin.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP41",
-    data: {item: 'EXP41', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP41', condition: 'literal criticism'}
   },
   {
     "s1": "Sarah was looking forward to a pleasant holiday dinner with her entire family.",
@@ -1382,8 +1512,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Sarah thinks the evening was tense.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP42",
-    data: {item: 'EXP42', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP42', condition: 'ironic criticism'}
   },
   {
     "s1": "Steve's statistics professor had a reputation for giving really difficult exams and refusing to curve the grades.",
@@ -1403,8 +1535,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Steve thinks the exam was difficult.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP43",
-    data: {item: 'EXP43', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP43', condition: 'ironic praise'}
   },
   {
     "s1": "Steven's friend said he only read trashy novels because he wasn't smart enough to read serious stuff.",
@@ -1424,8 +1558,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Steven thinks that his friend reads difficult material.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP44",
-    data: {item: 'EXP44', condition: 'literal criticism'}
+    data: {list: "A", item: 'EXP44', condition: 'literal criticism'}
   },
   {
     "s1": "Susan and her roommate were having a party and they thought it would be easy to cook a gourmet meal with a very small budget.",
@@ -1445,8 +1581,10 @@ var stimuli_a = [
     "t3_time": 1600,
     "Question": "Susan's roommate thinks the dinner party was a success.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP45",
-    data: {item: 'EXP45', condition: 'ironic criticism'}
+    data: {list: "A", item: 'EXP45', condition: 'ironic criticism'}
   },
   {
     "s1": "The students in Annette's class all had to do a group project.",
@@ -1466,8 +1604,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Annette thinks they did a good job.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP46",
-    data: {item: 'EXP46', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP46', condition: 'literal praise'}
   },
   {
     "s1": "Tim was bringing a friend to the neighborhood block party and he warned his friend that the party would probably be a deadly bore.",
@@ -1487,8 +1627,10 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Tim's friend thinks the party was boring.",
     "CorrectResponse": "F",
+    "cresp_L_TF":'p',
+    "cresp_R_TF":'q',
     "item": "EXP47",
-    data: {item: 'EXP47', condition: 'ironic praise'}
+    data: {list: "A", item: 'EXP47', condition: 'ironic praise'}
   },
   {
     "s1": "Tony was anxiously awaiting his SAT scores and he knew his parents expected him to do well.",
@@ -1508,7 +1650,9 @@ var stimuli_a = [
     "t3_time": 1200,
     "Question": "Tony thinks that his parents will be impressed with his scores.",
     "CorrectResponse": "T",
+    "cresp_L_TF":'q',
+    "cresp_R_TF":'p',
     "item": "EXP48",
-    data: {item: 'EXP48', condition: 'literal praise'}
+    data: {list: "A", item: 'EXP48', condition: 'literal praise'}
   }
 ]

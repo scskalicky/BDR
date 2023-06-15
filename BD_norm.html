@@ -52,7 +52,7 @@
 var timeline = [];
 
 
-irony_stim = stimuli_a_ND
+irony_stim = exp_stim_a_ND
 
 
 const browser_check = {
@@ -99,11 +99,11 @@ var enter_fullscreen = {
 const norming_instructions01 = {
     on_start: function(){
         // stupid function to pick the stimuli lists. 
-        var coin = Math.random(1);
+        var coin = Math.random(1); // no need to store "coin" in memory, i suppose. 
         jsPsych.data.addProperties({stim_list: 'A'})
         console.log(jsPsych.data.get())
         if(coin <=.5){
-            irony_stim = stimuli_b_ND
+            irony_stim = exp_stim_b_ND
             console.log('coin toss lost, switching to b')
             jsPsych.data.addProperties({stim_list: 'B'})
             console.log(jsPsych.data.get())
@@ -194,7 +194,6 @@ timeline.push(
     enter_fullscreen,
     norming_instructions01,
     ...demographic_timeline,
-   
     norming_instructions02,
     norming_instructions03,
     irony_rating_trials,
@@ -202,9 +201,6 @@ timeline.push(
     end_experiment
 );
  
-
-
-
 jsPsych.run(timeline);
 
 </script>

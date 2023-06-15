@@ -19,6 +19,8 @@
   <script src='lextale.js'></script>
   <script src='listA_stimuli_ND.js'></script>
   <script src='listB_stimuli_ND.js'></script>
+  <script src='listA_stimuli.js'></script>
+  <script src='listB_stimuli.js'></script>
   <script src='demographic_survey.js'></script>
   <script src='practice_stimuli.js'></script>
   <script src = 'helper_functions1.js'></script>
@@ -48,6 +50,9 @@
 // init timeline
 var timeline = [];
 
+
+exp_stim = exp_stim_a_ND;
+
 const browser_check = {
   type: jsPsychBrowserCheck,
   // returns whether the mobile is equal to false
@@ -69,8 +74,6 @@ const browser_check = {
 SET UP - INFO SHEET, CONSENT, INSTRUCTIONS
 #########################
 */
-
-
 const information_sheet = {
 		type: jsPsychHtmlButtonResponse,
 		stimulus: info_sheet,
@@ -97,16 +100,27 @@ const information_sheet = {
 const instructions_general = {
   type: jsPsychHtmlButtonResponse,
     stimulus: '<p class = "instructions">Thank you for participating in this study!</p><p class = "instructions" style = "font-size: 30px; color: red"><b>STOP!</b></p><p class = "instructions">You should set aside at least 30-45 minutes to complete this experiment. This experiment should be completed in one go - you cannot save your data and return later. In this experiment, you will complete three tasks: a demographic survey, a sentence reading activity, and a word recognition activity.<br><br>During the test, please <b><span style = "color:red;">do not</b><span> refresh your browser or use the back button. Doing so will result in a loss of all your data, and you will be unable to continue.<br><br>Finally, please be sure to take this test on a computer in a quiet room. Do not use a mobile device such as a phone or tablet.</p><br>',
-    choices: ['I Understand']
-}
+    choices: ['I Understand'],
+    on_finish: function(){
+        // stupid function to pick the stimuli lists. 
+        var coin = Math.random(1); // no need to store "coin" in memory, i suppose. 
+        jsPsych.data.addProperties({stim_list: 'A'})
+        console.log(jsPsych.data.get())
+        if(coin <=.5){
+            irony_stim = stimuli_b
+            console.log('coin toss lost, switching to b')
+            jsPsych.data.addProperties({stim_list: 'B'})
+            console.log(jsPsych.data.get())
+        };
 
+    }
+}
 
 var enter_fullscreen = {
   type: jsPsychFullscreen,
   fullscreen_mode: true,
   message: '<p class = "instructions" style = "font-size: 30px; color: red"><b>ATTENTION PLEASE!</b></p><p class = "instructions">We ask that you provide your fullest attention during the experiment. Please turn off your phone as well as any music, television, or other potential distractions around you. <br><br> Your browser will now switch to full screen mode. Please leave your browser in full screen for the duration of the test.</p><br>'
 };
-
 
 
 /* 
@@ -148,24 +162,28 @@ IRONY TASK
 
 /*
 Practice session - participants must have 75% accuracy to pass.
+- seems harsh because there are only 9 questions, so you can only get two wrong
+- AND, these are ironic, so you are really asking a lot here. . . 
 - need a conditional function to pass them through.
 - also need to adjust handedness
 
 */
 
-const instructions_irony_practice = {
+const instructions_irony_practice01 = {
   type: jsPsychInstructions,
   pages: ['<p class = "instructions"><b>Reading Task</b><br>In this task, you will read descriptions of situations involving different people. Each situation will end with a final sentence, where one of the characters says something.',
-  '<p class = "instructions">You will read the situations one sentence at a time, pushing the SPACEBAR to see each new sentence.</p>',
-  '<p class = "instructions">However, the final sentence will be presented to you automatically, one phrase at a time.</p>',
-  '<p class = "instructions">After reading the situation, you will be asked a True/False question about the situation.</p>'],
+  '<p class = "instructions"><b>Reading Task</b><br>You will read the situations one sentence at a time, pushing the SPACEBAR to see each new sentence.</p>',
+  '<p class = "instructions"><b>Reading Task</b><br>However, the final sentence will be presented to you automatically, one phrase at a time.</p>',
+  '<p class = "instructions"><b>Reading Task</b><br>After reading the situation, you will be asked a True/False question about the situation.</p>',
+  '<p class = "instructions"><b>Reading Task</b><br>The True/False question will be about how a person feels/thinks. You should consider their statement in light of the entire story when choosing whether the statement is true or false.</p>',
+  '<p class = "instructions"><b>Reading Task</b><br>Make sure to answer as quickly and as accurately as you can - there is a limited amount of time to answer each question.</p>'
+],
   show_clickable_nav: true,
 }
 
-
 const ready_hands = {
   type: jsPsychHtmlKeyboardResponse,
-  stimulus: '<p class = "instructions">Remember, you will press either the "Q" or the "P" key to make your answer.<br><br> Please please one hand ready to push the "Q" key and one hand ready to push the "P" key now. When you are ready, press the SPACEBAR to complete a practice session.</p>',
+  stimulus: '<p class = "instructions">Remember, you will press either the "Q" or the "P" key to make your answer.<br><br> Please please one hand ready to push the "Q" key and one hand ready to push the "P" key now. <br><br><b>Important!</b> Your accuracy is very important - you must achieve a high accuracy in the practice session to continue on to the  main task.<br><br>When you are ready, press the SPACEBAR to complete a practice session.</p>',
   choices: [" "]
 }
 
@@ -174,14 +192,27 @@ const TF_prompt_rightHand = "<br><br>Q = FALSE / P = TRUE"
 const TF_prompt_leftHand = "<br><br>Q = TRUE / P = FALSE"
 const continue_prompt = '<p style = "font-size:15px">press spacebar to proceed</p>'
 
+/* 
+#########################
+START PRACTICE SESSION
+Need to get 6/8 correct to proceed to the actual task.
+#########################
+*/
+
+
+// init the counters for practice trials
+practice_accuracy = 0;
+practice_trial_counter = 0;
+
 const irony_practice_trials = {
-  timeline: [
-  {
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus: 'Press the SPACEBAR to see the next situation.<br><br>',
-    choices: [' '],
-  },
-  {
+timeline: [
+  
+{
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: 'Press the SPACEBAR to see the next situation.<br><br>',
+  choices: [' '],
+},
+{
 type: jsPsychHtmlKeyboardResponse,
 prompt: continue_prompt,
 on_start: function(trial){
@@ -220,7 +251,7 @@ on_start: function(trial){
 stimulus: '',
 trial_duration: jsPsych.timelineVariable('t1_time'),
 data: jsPsych.timelineVariable("data"),
-choices: [' ']
+choices: ['']
 },
 {
 type: jsPsychHtmlKeyboardResponse,
@@ -231,41 +262,206 @@ on_start: function(trial){
 stimulus: '',
 trial_duration: jsPsych.timelineVariable('t2_time'),
 data: jsPsych.timelineVariable("data"),
-choices: [' ']
+choices: ['']
 },
 {
 type: jsPsychHtmlKeyboardResponse,
 prompt: '',
 on_start: function(trial){
-  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('t3'))
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('t3'));
 },
 stimulus: '',
 trial_duration: jsPsych.timelineVariable('t3_time'),
 data: jsPsych.timelineVariable("data"),
+choices: ['']
+},
+
+// tf question
+{
+type: jsPsychHtmlKeyboardResponse,
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('Question'));
+  if(handy == 'Left-Handed'){
+    trial.prompt = TF_prompt_leftHand
+  } else {
+    trial.prompt = TF_prompt_rightHand
+  };
+},
+prompt: '',
+stimulus: '',
+trial_duration: 18100, // 18 seconds with a buffer
+data: jsPsych.timelineVariable("data"),
+choices: ['q', 'p'],
+on_finish: function(data){
+  // need logic to calculate accuracy
+  // 'z' means cresp is false
+  
+  if(data.response == null){
+    // add timeout to data if they don't respond in time. 
+    data.response = 'timeout'
+  }
+  practice_trial_counter++;
+  
+  if(handy == 'Left-Handed' & data.response == jsPsych.timelineVariable('cresp_L') || handy == 'Right-Handed' & data.response == jsPsych.timelineVariable('cresp_R')){
+      practice_accuracy++
+      console.log('correct answer!')
+    } else{
+      console.log('incorrect answer!')
+    };
+    console.log(practice_accuracy);
+}
+},
+{ // conditional function to fire if they have too low accuracy. 
+    timeline: [
+      {
+        type: jsPsychHtmlButtonResponse,
+        stimulus: 'Your accuracy on the practice test was too low.<br><br>Please press continue to re-take the practice session.<br><br>',
+        choices: ['Retake']
+      }
+    ], 
+    conditional_function: function(){
+      // if on the last practice trial and too low accuracy
+      if(practice_trial_counter == 8 & practice_accuracy < 6){
+        return true;
+      } else {
+        return false;
+      }
+    }
+  },
+  ],
+  loop_function(data){
+
+      if(practice_accuracy < 6)
+{ 
+  practice_accuracy = 0; // reset the practice accuracy variable
+  practice_trial_counter = 0; // resent the practice trial counter variable. 
+  return true;
+} else {
+  return false;
+}  
+  }, 
+  
+  timeline_variables: practice_stim, randomize_order: true
+}
+
+/* 
+#########################
+START REAL IRONY SESSION
+after passing the practice session, they move on to the real irony session
+#########################
+*/
+
+const instructions_irony_real = {
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: '<p class = "instructions">Great! You have completed the practice task. You are now ready to begin the sentence reading task. You will provide answers for a total of <b>20</b> situations. Press the SPACEBAR to begin.</p>',
+  choices: [" "]
+}
+
+const irony_exp_trials = {
+timeline: [
+  
+{
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: 'Press the SPACEBAR to see the next situation.<br><br>',
+  choices: [' '],
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: continue_prompt,
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('s1'))
+},
+stimulus: continue_prompt,
+data: jsPsych.timelineVariable("data"),
+choices: [' ']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: continue_prompt,
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('s2'))
+},
+stimulus: '',
+data: jsPsych.timelineVariable("data"),
+choices: [' ']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: continue_prompt,
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('s3'))
+},
+stimulus: '',
+data: jsPsych.timelineVariable("data"),
 choices: [' ']
 },
 {
 type: jsPsychHtmlKeyboardResponse,
 prompt: '',
 on_start: function(trial){
-  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('Question'))
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('t1'))
 },
 stimulus: '',
-trial_duration: jsPsych.timelineVariable('tf_question_time'),
+trial_duration: jsPsych.timelineVariable('t1_time'),
 data: jsPsych.timelineVariable("data"),
-choices: ['q', 'p']
+choices: ['']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: '',
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('t2'))
+},
+stimulus: '',
+trial_duration: jsPsych.timelineVariable('t2_time'),
+data: jsPsych.timelineVariable("data"),
+choices: ['']
+},
+{
+type: jsPsychHtmlKeyboardResponse,
+prompt: '',
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('t3'));
+},
+stimulus: '',
+trial_duration: jsPsych.timelineVariable('t3_time'),
+data: jsPsych.timelineVariable("data"),
+choices: ['']
 },
 
-  ], timeline_variables: practice_stim
-
+// tf question
+{
+type: jsPsychHtmlKeyboardResponse,
+on_start: function(trial){
+  trial.stimulus = '<p style = "font-size:20px; text-align:center; border:dotted; width:500px;margin:auto">'.concat(jsPsych.timelineVariable('Question'));
+  if(handy == 'Left-Handed'){
+    trial.prompt = TF_prompt_leftHand
+  } else {
+    trial.prompt = TF_prompt_rightHand
+  };
+},
+prompt: '',
+stimulus: '',
+trial_duration: 18100, // 18 seconds with a buffer
+data: jsPsych.timelineVariable("data"),
+choices: ['q', 'p'],
+on_finish: function(data){
+  // need logic to calculate accuracy
+  // 'z' means cresp is false
+  if(data.response == null)
+  {
+  // add timeout to data if they don't respond in time. 
+  data.response = 'timeout'
+  }
+  if(handy == 'Left-Handed' & data.response == jsPsych.timelineVariable('cresp_L_TF') || handy == 'Right-Handed' & data.response == jsPsych.timelineVariable('cresp_R_TF')){
+  data.tf_acc = 1;
+  } else{
+  data.tf_acc = 0;
+  };
+  console.log(data.tf_acc)
 }
-
-
-const instructions_irony_real = {
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: '<p class = "instructions">You have completed the practice task. You are now ready to begin the sentence reading task. You will provide answers for a total of <b>20</b> situations. Press the SPACEBAR to begin.</p>',
-  choices: [" "]
 }
+], timeline_variables: exp_stim}
 
 
 /*
@@ -305,16 +501,19 @@ const lextale_timeline = [lextale_preamble, instructions_lextale, pre_lextale, l
 //const irony_timeline = [instructions_irony_practice, ready_hands, irony_practice_trials,instructions_irony_real, irony_trials]
 
 
+const irony_practice_timeline = [instructions_irony_practice01, ready_hands, irony_practice_trials]
+
 // use spread operator (...) to push the arrays
 timeline.push(
-  irony_practice_trials,
+  handedness,
+  irony_exp_trials,
+  ...irony_practice_timeline,
   consent,
   browser_check,
  ...introduction,
   ...demographic_timeline,
  // ...irony_timeline,
   //...lextale_timeline,
-  instructions_irony_practice,
 
   end_experiment
 );
