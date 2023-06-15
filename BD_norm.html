@@ -157,16 +157,23 @@ on_start: function(trial){
 
 }
 
-
-const end_experiment = {
-  type: jsPsychHtmlButtonResponse,
-  stimulus: '<p class = "instructions">You have completed the experiment, thank you. Please press Continue.</p>',
+// if participant clicks the CONTINUE button too quickly on the end experiment screen, then data is not saved (not enough time to write to server). This forces a five second wait. 
+const save_buffer = {
+  type: jsPsychHtmlKeyboardResponse,
   on_start: function(){
     // save data
     console.log(jsPsych.data.get().select('subject').values[0])
     //jsPsych.data.get().select('email').values[0]
     saveData(jsPsych.data.get().select('subject').values[0],jsPsych.data.get().select('email').values[0],jsPsych.data.get().csv());
   },
+  stimulus: "Please wait a moment...",
+  trial_duration: 5000,
+  choices: ['']
+}
+
+const end_experiment = {
+  type: jsPsychHtmlButtonResponse,
+  stimulus: '<p class = "instructions">You have completed the experiment, thank you. Please press Continue.</p>',
   choices: ["Continue"]
 }
 
@@ -198,6 +205,7 @@ timeline.push(
     norming_instructions03,
     irony_rating_trials,
     ...lextale_timeline,
+    save_buffer,
     end_experiment
 );
  
