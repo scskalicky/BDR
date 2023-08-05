@@ -1,12 +1,13 @@
 # BD_replications
  
 TODO
-- code TF and EDT versions
+- Finish norming study
+- Check TF
+- Code EDT
 - modularize them to clean them up
-- add logic for handedness as well.
 
-
-DONE 
 
 Norming study!
 Modularizing lextale etc!
+
+_ND = no distractors

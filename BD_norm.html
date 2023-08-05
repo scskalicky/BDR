@@ -62,7 +62,7 @@ const browser_check = {
     return data.mobile === false
   },
   // i changed the plugin itself--dangerous!
-  // i don't think this will even fire now but this is a required argument for this trial type. 
+  // this message won't actually be shown, instead they are forwarded to a mobilewarning.html page
   exclusion_message: (data) => {
     if(data.mobile){
       return '<p>You must use a desktop/laptop computer to participate in this experiment.</p>';
@@ -111,13 +111,13 @@ const norming_instructions01 = {
 
     },
   type: jsPsychHtmlButtonResponse,
-    stimulus: '<p class = "instructions">Thank you for participating in this study!</p><p class = "instructions" style = "font-size: 30px; color: red"><b>STOP!</b></p><p class = "instructions">You should set aside about 30-45 minutes to complete this experiment. This experiment should be completed in one go - you cannot save your data and return later. In this experiment, you will complete three tasks: a demographic survey, a sentence ratings activity, and a word recognition activity.<br><br>During the experiment, please <b><span style = "color:red;">do not</b><span> refresh your browser or use the back button. Doing so will result in a loss of all your data, and you will be unable to continue.<br><br>Finally, please be sure to take this test on a computer in a quiet room. Do not use a mobile device such as a phone or tablet.</p><br>',
+    stimulus: '<p class = "instructions">Thank you for participating in this study!</p><p class = "instructions" style = "font-size: 30px; color: red"><b>STOP!</b></p><p class = "instructions">You should set aside about 30-45 minutes to complete this experiment. This experiment should be completed in one go - you cannot save your data and return later. In this experiment, you will complete three tasks: a demographic survey, a sentence rating activity, and a word recognition activity.<br><br>During the experiment, please <b><span style = "color:red;">do not</b><span> refresh your browser or use the back button. Doing so will result in a loss of all your data, and you will be unable to continue.<br><br>Finally, please be sure to take this test on a computer in a quiet room. Do not use a mobile device such as a phone or tablet.</p><br>',
     choices: ['I Understand']
 }
 
 const norming_instructions02 = {
     type: jsPsychHtmlButtonResponse,
-    stimulus: '<p class = "instructions">Your will now read through a series of different stories. Each story will end with a target sentence. Your goal is to rate how ironic the target sentence is using a scale which ranges from not ironic to very ironic. When you make your decision, be sure to consider the statement in the context of the entire story.</p><br>',
+    stimulus: '<p class = "instructions">Your will now read through a series of different stories. Each story will end with a target sentence. Your goal is to rate how <b>ironic</b> the target sentence is using a scale which ranges from not ironic to very ironic. When you make your decision, be sure to consider the statement in the context of the entire story.</p><br>',
     choices: ['I Understand']
 }
 

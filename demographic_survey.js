@@ -42,10 +42,7 @@ const age = {
         data.trial_item = 'age_question';
     }
       };  	
-      
-      
-
-      
+        
 const sex = {
     type: jsPsychSurveyMultiChoice,
     questions: [{prompt: "Please select your gender<br>",
@@ -59,7 +56,7 @@ const sex = {
 const education_level = {
 type: jsPsychSurveyMultiChoice,
 questions: [{prompt: "Current level of education<br>",
-options: ['First Year University', 'Second Year University', 'Third Year University', 'Fourth Year University', 'Postgraduate University'], required: true}],
+options: ['Finished High School', 'First Year University', 'Second Year University', 'Third Year University', 'Fourth Year University', 'Postgraduate University'], required: true}],
 on_finish: function(data){
     jsPsych.data.addProperties({education_level: data.response})
     data.trial_item = 'education_level';

@@ -117,7 +117,7 @@ const lextale_preamble = {
 			{
 		type: jsPsychHtmlButtonResponse,
 
-		// without this, the function will fail. stupid. 
+		// without this, the function will fail. this is needed if not in the main jsPsych spot. 
 		on_start: function(trial){
 			trial.stimulus = jsPsych.timelineVariable('word')
 			trial.data = jsPsych.timelineVariable('data')
@@ -146,5 +146,9 @@ const lextale_preamble = {
 		}}
 		},
 		],
-		timeline_variables: lextale_words
+		timeline_variables: lextale_words,
+		on_timeline_finish: function(){
+			var lextale_score = ((rw_score / 40*100) + (nw_score / 20 * 100))  / 2;
+				jsPsych.data.addProperties({lextale_score: lextale_score});
+		  }
 	}; 
