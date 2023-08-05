@@ -35,7 +35,7 @@
     message_progress_bar: '<span style = "color:red";><b>DO NOT REFRESH YOUR BROWSER OR HIT BACK!<span></b>',
     on_finish: function(data){
       // forward to thank you message.
-       window.location = 'https://figuratively-speaking.com/BDR/thankyou.html'
+      window.location = "https://vuw.qualtrics.com/jfe/form/SV_9XEaazUpjNPPXf0?subject=" + jsPsych.data.get().select('subject').values[0] + '&subject_email=' + jsPsych.data.get().select('email').values[0]
     },
   });
   </script>
@@ -97,12 +97,11 @@ const information_sheet = {
 		required: true,
 		on_finish: function(data){
 			data.trial_item = 'consent',
-      jsPsych.data.addProperties({first_name: jsPsych.data.getURLVariable('fn')})
-      jsPsych.data.addProperties({family_name: jsPsych.data.getURLVariable('sn')})
-      jsPsych.data.addProperties({email: jsPsych.data.getURLVariable('em')})
+      jsPsych.data.addProperties({first_name: jsPsych.data.getURLVariable('fn')}),
+      jsPsych.data.addProperties({family_name: jsPsych.data.getURLVariable('sn')}),
+      jsPsych.data.addProperties({email: jsPsych.data.getURLVariable('em')}),
+      jsPsych.data.addProperties({lang_group: jsPsych.data.getURLVariable('lang_group')}),
       jsPsych.data.addProperties({subject:  jsPsych.data.getURLVariable('fn').concat('_', jsPsych.data.getURLVariable('sn'), '_', performance.now())}),
-      console.log(data.subject)
-      console.log(data.email)
       console.log(jsPsych.data.get())
       }
 	};
