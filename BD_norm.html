@@ -34,12 +34,6 @@
     show_progress_bar: true,
     message_progress_bar: '<span style = "color:red";><b>DO NOT REFRESH YOUR BROWSER OR HIT BACK!<span></b>',
     on_finish: function(data){
-      // calculate lextale and append to data.
-      var lextale_score = ((rw_score / 40*100) + (nw_score / 20 * 100))  / 2;
-		  jsPsych.data.addProperties({lextale_score: lextale_score});
-        
-        //   jsPsych.data.displayData();
-
       // forward to thank you message.
        window.location = 'https://figuratively-speaking.com/BDR/thankyou.html'
     },
@@ -51,8 +45,24 @@
 // init timeline
 var timeline = [];
 
+// pick the stimuli
+var irony_stim = []
 
-irony_stim = exp_stim_a_ND
+var coin = Math.random(1); 
+
+if(coin <=.5){
+  var irony_stim = exp_stim_b_ND;
+  console.log('coin toss lost, switching to b')
+  jsPsych.data.addProperties({stim_list: 'B'})
+
+  } else {
+
+    var irony_stim = exp_stim_a_ND;
+    jsPsych.data.addProperties({stim_list: 'A'})
+  };
+
+  console.log(jsPsych.data.get())
+  console.log(irony_stim)
 
 
 const browser_check = {
@@ -63,6 +73,7 @@ const browser_check = {
   },
   // i changed the plugin itself--dangerous!
   // this message won't actually be shown, instead they are forwarded to a mobilewarning.html page
+  // otherwise the message just flashes for a second and then the experiment ends
   exclusion_message: (data) => {
     if(data.mobile){
       return '<p>You must use a desktop/laptop computer to participate in this experiment.</p>';
@@ -70,6 +81,7 @@ const browser_check = {
   }
 };
 
+// from demographic_survey.js
 const information_sheet = {
 		type: jsPsychHtmlButtonResponse,
 		stimulus: info_sheet,
@@ -80,6 +92,7 @@ const information_sheet = {
 			data.trial_item = 'info_sheet';}
 	};
 
+  // from demographic_survey.js
 	const consent = {
 		type: jsPsychHtmlButtonResponse,
 		stimulus: consent_sheet,
@@ -87,7 +100,14 @@ const information_sheet = {
 		prompt: '<br><br>',
 		required: true,
 		on_finish: function(data){
-			data.trial_item = 'consent';}
+			data.trial_item = 'consent',
+      jsPsych.data.addProperties({first_name: jsPsych.data.getURLVariable('fn')})
+      jsPsych.data.addProperties({family_name: jsPsych.data.getURLVariable('sn')})
+      jsPsych.data.addProperties({email: jsPsych.data.getURLVariable('em')})
+      jsPsych.data.addProperties({subject:  jsPsych.data.getURLVariable('fn').concat('_', jsPsych.data.getURLVariable('sn'), '_', performance.now())}),
+      console.log(data.subject)
+      console.log(data.email)
+      }
 	};
 
 var enter_fullscreen = {
@@ -97,19 +117,19 @@ var enter_fullscreen = {
 };
 
 const norming_instructions01 = {
-    on_start: function(){
-        // stupid function to pick the stimuli lists. 
-        var coin = Math.random(1); // no need to store "coin" in memory, i suppose. 
-        jsPsych.data.addProperties({stim_list: 'A'})
-        console.log(jsPsych.data.get())
-        if(coin <=.5){
-            irony_stim = exp_stim_b_ND
-            console.log('coin toss lost, switching to b')
-            jsPsych.data.addProperties({stim_list: 'B'})
-            console.log(jsPsych.data.get())
-        };
+    // on_start: function(){
+    //     // function to pick the stimuli lists 
+    //     var coin = Math.random(1); // no need to store "coin" in memory, i suppose. 
+    //     jsPsych.data.addProperties({stim_list: 'A'})
+    //     console.log(jsPsych.data.get())
+    //     if(coin <=.5){
+    //         irony_stim = exp_stim_b_ND
+    //         console.log('coin toss lost, switching to b')
+    //         jsPsych.data.addProperties({stim_list: 'B'})
+    //         console.log(jsPsych.data.get())
+    //     };
 
-    },
+    // },
   type: jsPsychHtmlButtonResponse,
     stimulus: '<p class = "instructions">Thank you for participating in this study!</p><p class = "instructions" style = "font-size: 30px; color: red"><b>STOP!</b></p><p class = "instructions">You should set aside about 30-45 minutes to complete this experiment. This experiment should be completed in one go - you cannot save your data and return later. In this experiment, you will complete three tasks: a demographic survey, a sentence rating activity, and a word recognition activity.<br><br>During the experiment, please <b><span style = "color:red;">do not</b><span> refresh your browser or use the back button. Doing so will result in a loss of all your data, and you will be unable to continue.<br><br>Finally, please be sure to take this test on a computer in a quiet room. Do not use a mobile device such as a phone or tablet.</p><br>',
     choices: ['I Understand']
@@ -179,7 +199,7 @@ const end_experiment = {
 
 
 const demographic_timeline = [instructions_demo, 
-name, 
+//name, 
 age, 
 sex,
 education_level, 
