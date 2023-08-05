@@ -35,7 +35,7 @@
     message_progress_bar: '<span style = "color:red";><b>DO NOT REFRESH YOUR BROWSER OR HIT BACK!<span></b>',
     on_finish: function(data){
       // forward to thank you message.
-      window.location = "https://vuw.qualtrics.com/jfe/form/SV_9XEaazUpjNPPXf0?subject=" + jsPsych.data.get().select('subject').values[0] + '&subject_email=' + jsPsych.data.get().select('email').values[0]
+      window.location = "https://vuw.qualtrics.com/jfe/form/SV_9XEaazUpjNPPXf0?subject=" + jsPsych.data.get().select('subject').values[0] + '&subject_email=' + jsPsych.data.get().select('email').values[0] + '&lang_group=' + jsPsych.data.get().select('lang_group').values[0]
     },
   });
   </script>
@@ -103,6 +103,7 @@ const information_sheet = {
       jsPsych.data.addProperties({lang_group: jsPsych.data.getURLVariable('lang_group')}),
       jsPsych.data.addProperties({subject:  jsPsych.data.getURLVariable('fn').concat('_', jsPsych.data.getURLVariable('sn'), '_', performance.now())}),
       console.log(jsPsych.data.get())
+      console.log(jsPsych.data.get().select('lang_group').values[0])
       }
 	};
 
