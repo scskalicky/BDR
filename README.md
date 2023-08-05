@@ -3,11 +3,11 @@
 TODO
 - Finish norming study
 - Check TF
+    - need dynamic hands for TF and EDT
 - Code EDT
-- modularize them to clean them up
+- modularize them to clean them up (not super necessary)
 
 
-Norming study!
-Modularizing lextale etc!
+
 
 _ND = no distractors
